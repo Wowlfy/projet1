@@ -1,25 +1,30 @@
-@import '../../main.css';
+@import 'main.css';
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
+    background-color: var(--mainColor);
 }
 
 .nav-top {
-    background-color: var(--mainColor);
+    background-color: var(--darkColor);
     padding: var(--thirdPadding);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-top a {
+a {
     text-decoration: none;
 }
 
 .contact-me {
     font-size: 2.2em;
     font-family: var(--titleFont);
-    font-style: italic; 
+    font-style: italic;
     color: var(--lightColor);
     text-shadow: 0.2em;
 }
@@ -36,4 +41,39 @@ body {
 
 .nav-top .logo-nav-mcclane {
     color: var(--secondaryColor);
+}
+
+.nav-left {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    padding: var(--secondaryPadding);
+    top: 40%;
+}
+
+.nav-left a {
+    color: var(--lightColor);
+    padding: var(--primaryPadding) 0;
+    opacity: 0.6;
+    transition: all 0.6s ease-out;
+}
+
+.nav-left a:hover {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+section {
+    padding: calc(var(--thirdPadding) *3);
+}
+
+section p {
+    color: var(--lightColor);
+    font-size: 50px;
+}
+
+h2 {
+    color: var(--lightColor);
+    font-size: 50px;
+    text-align: center;
 }
