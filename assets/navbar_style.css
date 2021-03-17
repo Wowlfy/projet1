@@ -1,0 +1,39 @@
+@import '../../main.css';
+
+body {
+    margin: 0;
+}
+
+.nav-top {
+    background-color: var(--mainColor);
+    padding: var(--thirdPadding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-top a {
+    text-decoration: none;
+}
+
+.contact-me {
+    font-size: 2.2em;
+    font-family: var(--titleFont);
+    font-style: italic; 
+    color: var(--lightColor);
+    text-shadow: 0.2em;
+}
+
+.logo-nav {
+    font-family: var(--subTitleFont);
+    font-size: 2.1em;
+    opacity: 0.9;
+}
+
+.nav-top .logo-nav-john {
+    color: var(--lightColor);
+}
+
+.nav-top .logo-nav-mcclane {
+    color: var(--secondaryColor);
+}
