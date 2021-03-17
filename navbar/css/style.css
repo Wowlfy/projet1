@@ -4,7 +4,7 @@ body {
     margin: 0;
 }
 
-nav {
+.nav-top {
     background-color: var(--mainColor);
     padding: var(--thirdPadding);
     display: flex;
@@ -12,11 +12,23 @@ nav {
     align-items: center;
 }
 
-nav a {
+.nav-top a {
     color: var(--lightColor);
     text-decoration: none;
 }
 
 .contact-me {
-    font-size: 35px;
+    font-size: 2.4em;
+    font-family: var(--titleFont);  
+    font-style: italic;
+}
+
+.logo-nav {
+    font-family: var(--subTitleFont);
+    font-size: 2em;
+    opacity: 0.9;
+}
+
+.logo-nav-mcclane {
+    color: var(--secondaryColor);
 }
