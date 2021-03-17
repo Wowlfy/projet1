@@ -1,4 +1,4 @@
-/* Pour importer le fichier main.css sur votre style.css ajoutez "@import 'main.css';" au début de votre code */
+/* Pour importer le fichier main.css sur votre style.css ajoutez "@import '../../main.css';" au début de votre code */
 
 :root {
     --mainColor: #131414;
