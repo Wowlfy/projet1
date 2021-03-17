@@ -13,22 +13,27 @@ body {
 }
 
 .nav-top a {
-    color: var(--lightColor);
     text-decoration: none;
 }
 
 .contact-me {
-    font-size: 2.4em;
-    font-family: var(--titleFont);  
-    font-style: italic;
+    font-size: 2.2em;
+    font-family: var(--titleFont);
+    font-style: italic; 
+    color: var(--lightColor);
+    text-shadow: 0.2em;
 }
 
 .logo-nav {
     font-family: var(--subTitleFont);
-    font-size: 2em;
+    font-size: 2.1em;
     opacity: 0.9;
 }
 
-.logo-nav-mcclane {
+.nav-top .logo-nav-john {
+    color: var(--lightColor);
+}
+
+.nav-top .logo-nav-mcclane {
     color: var(--secondaryColor);
 }
