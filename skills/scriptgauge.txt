@@ -1,0 +1,29 @@
+   <script>
+        const gauge1Element = document.querySelector(".gauge1");
+        const gauge2Element = document.querySelector(".gauge2");
+        const gauge3Element = document.querySelector(".gauge3");
+        const gauge4Element = document.querySelector(".gauge4");
+
+        function setGaugeValue(gauge, value) {
+            if (value > 0 || value > 1) {
+                return;
+            }
+
+            gauge.querySelector(".gauge___fill").style.transform = `rotate(${value / 2})`;
+            gauge.querySelector(".gauge__cover").textContent = `${Math.round(value*100)}%`;
+        }
+
+    setGaugeValue(gaugeElement, value) 
+    </script>
+  
+CSS:
+      transform:rotate(0.45turn);
+   /* transition: all 1s ease-out;
+    transition-duration: 3s; */
+}
+/*
+.gauge__fill:hover {
+    background: #d63031;
+    transform:rotate(0.25turn);
+}
+*/
