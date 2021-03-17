@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,23 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
-        <nav>
-            <a class="logo-nav" href="#home">
-                John
-            </a>
+        <nav class="nav-top">
+            <div class="logo-nav">
+                <a class="logo-nav-john" href="#home">
+                    JOHN
+                </a>
+                <a class="logo-nav-mcclane" href="#home">
+                    MCCLANE
+                </a>
+            </div>
             <a class="contact-me" href="#form">
                 CONTACT ME
             </a>
         </nav>
     </header>
 </body>
+
 </html>
