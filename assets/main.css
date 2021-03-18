@@ -15,4 +15,4 @@
     --secondaryPadding: calc(var(--primaryPadding) * 2);
     --thirdPadding: calc(var(--primaryPadding) * 3);
   }
-
+  

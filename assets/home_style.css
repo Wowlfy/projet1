@@ -1,0 +1,83 @@
+@import url(main.css);
+
+
+/* Ici le flexbox contient 2 boites : ".mainHeading" et ".bioHeading" */
+.heading {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Contient l'image de New York en arriere plan */
+.mainHeading {
+    background-color: var(--mainColor);
+    color: var(--secondaryColor);
+    text-align: center;
+    background-image: url("img/new_york.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 1024px;
+    height: 500px;
+}
+
+/* les titres H1 et H2 */
+h1, h2 {
+    color: var(--secondaryColor);
+    text-align: center;
+    font-family: var(--titleFont);
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+/* Ici le flexbox contient 2 boites : ".photo", ".bio_text" */
+.bioHeading {
+    display: flex;
+    justify-content: flex-start;
+    background-color: var(--darkColor);
+    width: 100%;
+    height: auto;
+}
+
+/* La photo de John McClane */
+.photo {
+    width: 50%;
+    height: auto;
+}
+
+/* Ici c'est la BIographie de John McClane, le flexbox contient 2 boites et ".h3", ".p", ".arrow" */
+.bioText
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--lightColor);
+    text-align: center;
+}
+
+h3 {
+    font-family: var(--titleFont);
+    font-weight: bold;
+    font-size: medium;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-family: var(--textFont);
+}
+
+
+/* l'image de la fleche */
+
+@keyframes down {
+    0% {position:relative; top:0px; opacity: 0}
+    50% {position:relative; top:15px; opacity: 0.5}
+    100% {position:relative; top:30px; opacity: 1}
+
+}
+
+.arrow {
+    animation: down 1s infinite linear alternate;
+    width: 15%;
+    align-items: center;
+}
