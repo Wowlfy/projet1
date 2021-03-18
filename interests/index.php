@@ -18,7 +18,7 @@ Shooting
 Watching Captain Kangaroo
 -->
 <?php require_once "interests.php" ?>
-<h1>Interests</h1>
+<h1>INTERESTS</h1>
 <section class="interests">
     <div class="interest">
         <img class="interestPicture" src="../picture/smiley.jpeg" alt ="laughing smiley" />

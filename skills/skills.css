@@ -19,6 +19,15 @@
     background-color: #2d3436;
 }
 
+h1
+{
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    color: #d63031;
+    margin-top: 20px;
+    font-size: 50px;
+}
+
 .skills{
     margin-top:25%;
     display: flex;

@@ -11,6 +11,7 @@
 
 <body>
     <?php require_once "skills.php" ?>
+    <h1>SKILLS</h1>
     <section class="skills">
         <div class='gauge'>
             <div class="gauge__body">
