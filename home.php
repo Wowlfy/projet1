@@ -1,18 +1,23 @@
+<html>
 <link href="assets/home_style.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <section class="home">
 
     <div class="heading">
         <div class="mainHeading">
-            <h1>Hello I'm John McClane</h1>
-            <h2>Lieutenant de la Police de New York</h2>  
+            <div class=titles>
+                <h1>Hello I'm John McClane</h1>
+                <h2>Lieutenant de la Police de New York</h2>
+            </div>
+            <a href="#aboutMe"><img class="arrow" src="assets/img/arrow.png" alt="fleche"></a>
         </div>
         
         <div class="bioHeading">
 
             <img class="photo" src="assets/img/john_mcclane.png" alt="John McCane">
             <div class="bioText">
-                <h3>ABout Me</h3>
+                <h3 id="aboutMe">ABout Me</h3>
                 <p>
                     Jeunesse
                     John McClane, Sr. est né le 19 mars 1955 à Plainfield, au New Jersey, au
@@ -36,8 +41,8 @@
                     un homme d'affaires nommé Harry Ellis qui dit avoir beaucoup entendu parler de lui. John est ensuite conduit
                     par Holly jusqu'à la salle de bain du bureau d'Ellis.
                 </p>
-                <a href="#"><img class="arrow" src="assets/img/arrow.png" alt="fleche"></a>
             </div>
         </div>
     </div>
 </section>
+</html>

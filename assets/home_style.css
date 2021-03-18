@@ -1,5 +1,8 @@
 @import url(main.css);
 
+html {
+    scroll-behavior: smooth;
+}
 
 /* Ici le flexbox contient 2 elements : ".mainHeading" et ".bioHeading" */
 .heading {
@@ -18,7 +21,12 @@
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
+
 
 /* les titres H1 et H2 */
 h1, h2 {
@@ -26,7 +34,15 @@ h1, h2 {
     text-align: center;
     font-family: var(--titleFont);
     font-weight: bold;
-    font-size: xx-large;
+    position: relative;
+    font-size: 300%;
+    text-shadow: 2px 2px 8px white;
+}
+
+.titles {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
 }
 
 /* Ici le flexbox contient 2 elements : ".photo", ".bio_text" */
@@ -68,7 +84,6 @@ p {
 
 
 /* l'image de la fleche */
-
 @keyframes down {
     0% {position:relative; top:0px; opacity: 0}
     50% {position:relative; top:15px; opacity: 0.5}
@@ -78,6 +93,17 @@ p {
 
 .arrow {
     animation: down 1s infinite linear alternate;
-    width: 15%;
     align-items: center;
+    width: 3vw;
+    height: 6vh;
+}
+
+@media screen and (max-width: 900px)
+{
+    /* Ici le flexbox contient 2 elements : ".photo", ".bio_text" */
+    .bioHeading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
