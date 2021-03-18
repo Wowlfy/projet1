@@ -1,7 +1,7 @@
 @import url(main.css);
 
 
-/* Ici le flexbox contient 2 boites : ".mainHeading" et ".bioHeading" */
+/* Ici le flexbox contient 2 elements : ".mainHeading" et ".bioHeading" */
 .heading {
     display: flex;
     flex-direction: column;
@@ -29,7 +29,7 @@ h1, h2 {
     font-size: xx-large;
 }
 
-/* Ici le flexbox contient 2 boites : ".photo", ".bio_text" */
+/* Ici le flexbox contient 2 elements : ".photo", ".bio_text" */
 .bioHeading {
     display: flex;
     justify-content: flex-start;
@@ -44,7 +44,7 @@ h1, h2 {
     height: auto;
 }
 
-/* Ici c'est la BIographie de John McClane, le flexbox contient 2 boites et ".h3", ".p", ".arrow" */
+/* Ici c'est la BIographie de John McClane, le flexbox contient 2 elements et ".h3", ".p", ".arrow" */
 .bioText
 {
     display: flex;
