@@ -47,7 +47,7 @@
     overflow: hidden;
 }
 
-.gauge__fill1 {
+.gauge__fill {
     position: absolute;
     top: 100%;
     left: 0;
@@ -55,40 +55,54 @@
     height: 100%;
     background: #d63031;
     transform-origin: center top;
+}
+
+#one {
     transform:rotate(0.250turn);
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
 
-.gauge__fill2 {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: inherit;
-    height: 100%;
-    background: #d63031;
-    transform-origin: center top;
+#one:focus {
+    transform:rotate(0turn);
+}
+
+#two {
     transform:rotate(0.125turn);
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
 
-.gauge__fill3 {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: inherit;
-    height: 100%;
-    background: #d63031;
-    transform-origin: center top;
+#two:focus {
+    transform:rotate(0turn);
+}
+
+#three {
     transform:rotate(0.375turn);
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
 
-.gauge__fill4 {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: inherit;
-    height: 100%;
-    background: #d63031;
-    transform-origin: center top;
-    transform:rotate(0.45turn);
+#three:focus {
+    transform:rotate(0turn);
+}
+
+#four {
+    transform:rotate(0.450turn);
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+#four:focus {
+    transform:rotate(0turn);
 }
 
 .gauge__cover{
