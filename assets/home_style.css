@@ -16,8 +16,8 @@
     background-image: url("img/new_york.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    min-width: 1024px;
-    height: 500px;
+    width: 100vw;
+    height: 100vh;
 }
 
 /* les titres H1 et H2 */
@@ -34,7 +34,7 @@ h1, h2 {
     display: flex;
     justify-content: flex-start;
     background-color: var(--darkColor);
-    width: 100%;
+    width: 100vw;
     height: auto;
 }
 
