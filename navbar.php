@@ -12,17 +12,41 @@
 
 <body>
     <header>
+
         <nav class="nav-top">
             <div class="logo-nav">
-                <a class="logo-nav-john" href="#home">
+                <a class="logo" href="#home">
                     JOHN
-                </a>
-                <a class="logo-nav-mcclane" href="#home">
-                    MCCLANE
+                    <span>MCCLANE</span>
                 </a>
             </div>
-            <a class="contact-me" href="#form">
-                CONTACT ME
+
+            <div class="items" id="items">
+                <a href="#home">
+                    Home
+                </a>
+                <a href="#skills">
+                    Skills
+                </a>
+                <a href="#experiences">
+                    Experiences
+                </a>
+                <a href="#formations">
+                    Formations
+                </a>
+                <a href="#interests">
+                    Interests
+                </a>
+                <a class="contact-me" href="#form">
+                    Contact Me
+                </a>
+                <a class="close" href="#close">
+                    <i class="far fa-times-circle"></i>
+                </a>
+            </div>
+
+            <a class="burger" href="#items">
+                <i class="fa fa-bars"></i>
             </a>
         </nav>
 
