@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Skills</title>
     <link rel="Stylesheet" href="skills.css">
 </head>
 
 <body>
+    <?php require_once "skills.php" ?>
     <section class="skills">
         <div class='gauge'>
             <div class="gauge__body">
                 <div class="gauge__fill" id="one"></div>
-                <div class="gauge__cover">50%</div>
+                <div class="gauge__cover"><?php echo $skillOneValue . "%"?></div>
             </div>
             <div class="gauge__legend">Skill</div>
         </div>

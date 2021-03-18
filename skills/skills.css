@@ -16,7 +16,7 @@
   }
 
 *{
-    background-color: #131414;
+    background-color: #2d3436;
 }
 
 .skills{
@@ -28,11 +28,11 @@
     flex-wrap: wrap;
 }
 .gauge {
-    width:75%;
-    max-width: 250px;
+    width:60%;
+    max-width: 200px;
     font-family: 'Questrial', sans-serif;
-    font-size:32px;
-    background-color:#131414;
+    font-size:25px;
+    background-color:#2d3436;
 
 }
 
@@ -65,7 +65,7 @@
     transition-delay: 0s;
 }
 
-#one:focus {
+#one:hover {
     transform:rotate(0turn);
 }
 
@@ -84,9 +84,9 @@
 #three {
     transform:rotate(0.375turn);
     transition-property: transform;
-    transition-duration: 2s;
+    transition-duration: 4s;
     transition-timing-function: ease;
-    transition-delay: 0s;
+    transition-delay: 0.5s;
 }
 
 #three:focus {
@@ -108,7 +108,7 @@
 .gauge__cover{
     width:75%;
     height:150%;
-    background-color: #131414;
+    background-color: #2d3436;
     border-radius: 50%;
     position: absolute;
     top: 25%;
