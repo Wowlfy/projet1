@@ -1,98 +1,99 @@
-    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
-:root {
-    --mainColor: #131414;
-    --secondaryColor: #d63031;
-    --darkColor: #2d3436;
-    --lightColor: #dfe6e9;
-    --titleFont: 'Anton', sans-serif;
-    --subTitleFont: 'Bebas Neue', cursive;
-    --textFont: 'Questrial', sans-serif;
-    --primaryPadding: 8px;
-    --secondaryPadding: calc(var(--primaryPadding) * 2);
-    --thirdPadding: calc(var(--primaryPadding) * 3);
-    background-color: var(--mainColor);
-    text-align: center;
-    font-size: 24px
-}
-
-@media (max-width: 100em) {
-    .menu {
-        width: 100%;
-    }
-    .menu li {
-        display: inline-block;
-    }
-    .form {
-        background-image: url(/IMG_3761.jpeg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-    }
-    .head {
-        color: var(--secondaryColor);
-        font-family: var(--titleFont);
-    }
-    .formText {
-        font-family: var(--textFont) vertical;
-    }
-    .wrapper {
-        margin: 80px auto;
-        text-align: center;
-        width: 100%;
-        position: relative;
-        font-family: var(--textFont);
-    }
-    .button {
-        padding: 15px 100px;
-        margin: 10px 4px;
-        color: var(--secondaryColor);
-        text-transform: uppercase;
-        text-align: center;
-        position: relative;
-        text-decoration: none;
-        display: inline-block;
-        font-family: var(--textFont);
-    }
-    .button {
-        border: 1px solid transparent;
-        -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
-        transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
-    }
-    .button::before {
-        content: '';
-        position: absolute;
-        left: 0px;
-        bottom: 0px;
-        z-index: -1;
-        width: 0%;
-        height: 1px;
-        background: var(--secondaryColor);
-        box-shadow: inset 0px 0px 0pxvar(var(--lightColor));
-        display: block;
-        -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
-        transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
-    }
-    .button:hover::before {
-        width: 100%;
-    }
-    .button::after {
-        content: '';
-        position: absolute;
-        right: 0px;
-        top: 0px;
-        z-index: -1;
-        width: 0%;
-        height: 1px;
-        background: var(--lightColor);
-        -webkit-transition: all 0.4s cubic-bezier(.7, .25, 0, 1);
-        transition: all 0.4s cubic-bezier(.7, .25, 0, 1)
-    }
-    .button:hover::after {
-        width: 100%;
-    }
-    .button:hover {
-        border-left: 1px solid var(--secondaryColor);
-        border-right: 1px solid var(--secondaryColor);
-    }
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+         :root {
+            --mainColor: #131414;
+            --secondaryColor: #d63031;
+            --darkColor: #2d3436;
+            --lightColor: #dfe6e9;
+            --titleFont: 'Anton', sans-serif;
+            --subTitleFont: 'Bebas Neue', cursive;
+            --textFont: 'Questrial', sans-serif;
+            --primaryPadding: 8px;
+            --secondaryPadding: calc(var(--primaryPadding) * 2);
+            --thirdPadding: calc(var(--primaryPadding) * 3);
+            background-color: var(--mainColor);
+            text-align: center;
+            font-size: 24px
+        }
+        
+        @media (max-width: 100em) {
+            .menu {
+                width: 100%;
+            }
+            .menu li {
+                display: inline-block;
+            }
+            .form {
+                background-image: url(assets/img/IMG_3761.jpeg);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+            }
+            .head {
+                color: var(--secondaryColor);
+                font-family: var(--titleFont);
+            }
+            .formText {
+                font-family: var(--textFont) vertical;
+            }
+            .wrapper {
+                margin: 80px auto;
+                text-align: center;
+                width: 100%;
+                position: relative;
+                font-family: var(--textFont);
+            }
+            .button {
+                padding: 15px 100px;
+                margin: 10px 4px;
+                color: var(--secondaryColor);
+                text-transform: uppercase;
+                text-align: center;
+                position: relative;
+                text-decoration: none;
+                display: inline-block;
+                font-family: var(--textFont);
+            }
+            .button {
+                border: 1px solid transparent;
+                -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+                transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+            }
+            .button::before {
+                content: '';
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                z-index: -1;
+                width: 0%;
+                height: 1px;
+                background: var(--secondaryColor);
+                box-shadow: inset 0px 0px 0pxvar(var(--lightColor));
+                display: block;
+                -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+                transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+            }
+            .button:hover::before {
+                width: 100%;
+            }
+            .button::after {
+                content: '';
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                z-index: -1;
+                width: 0%;
+                height: 1px;
+                background: var(--lightColor);
+                -webkit-transition: all 0.4s cubic-bezier(.7, .25, 0, 1);
+                transition: all 0.4s cubic-bezier(.7, .25, 0, 1)
+            }
+            .button:hover::after {
+                width: 100%;
+            }
+            .button:hover {
+                border-left: 1px solid var(--secondaryColor);
+                border-right: 1px solid var(--secondaryColor);
+            }
+        }
