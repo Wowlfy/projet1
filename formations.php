@@ -9,7 +9,7 @@
     <link href="assets/formations_styles.css" rel="stylesheet">
 </head>
 
-<section id="formations">
+<section id="formations" class="formations">
 
     <h2>Formations</h2>
     <div class="carousel">

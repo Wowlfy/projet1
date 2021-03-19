@@ -1,21 +1,4 @@
-    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
-:root {
-    --mainColor: #131414;
-    --secondaryColor: #d63031;
-    --darkColor: #2d3436;
-    --lightColor: #dfe6e9;
-    --titleFont: 'Anton', sans-serif;
-    --subTitleFont: 'Bebas Neue', cursive;
-    --textFont: 'Questrial', sans-serif;
-    --primaryPadding: 8px;
-    --secondaryPadding: calc(var(--primaryPadding) * 2);
-    --thirdPadding: calc(var(--primaryPadding) * 3);
-    background-color: var(--mainColor);
-    text-align: center;
-    font-size: 24px
-}
+@import 'main.css';
 
 @media (max-width: 100em) {
     .menu {

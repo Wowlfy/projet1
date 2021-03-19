@@ -1,34 +1,30 @@
-@import '../../main.css';
-
-* {
+@import 'main.css';
+.interests-main {
     background-color: var(--darkColor);
     font-size: 32px;
-    margin:0px;
-
+    margin: 0;
+    padding: 0;
 }
 
-h1
-{
+.interests-main h1 {
     font-family: var(--titleFont);
     text-align: center;
     color: var(--secondaryColor);
-    margin-top: 20px;
+    margin: 20px 0 0 0;
     font-size: 50px;
 }
 
-.interests
-{
+.interests {
     width: 100vw;
-    height:auto;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.interest
-{
-    width:100vw;
+.interest {
+    width: 100vw;
     min-width: 200px;
     display: flex;
     flex-direction: column;
@@ -36,11 +32,10 @@ h1
     align-items: center;
     height: auto;
     margin-bottom: 12px;
-    margin-top:12px;
+    margin-top: 12px;
 }
 
-.interestPicture
-{
+.interestPicture {
     width: 25%;
     max-width: 200px;
     height: auto;
@@ -48,8 +43,7 @@ h1
     margin-bottom: 15px;
 }
 
-.interstTitle
-{
+.interstTitle {
     color: var(--lightColor);
     font-family: var(--titleFont);
     text-align: center;

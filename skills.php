@@ -9,6 +9,7 @@
     <link rel="Stylesheet" href="skills.css">
 </head>
 
+<div class="skills-main">
 
     <h1>SKILLS</h1>
     <section id="skills" class="skills">
@@ -41,6 +42,8 @@
             <div class="gauge__legend">Charisma</div>
         </div>
     </section>
+
+</div>
 
 
 </html>

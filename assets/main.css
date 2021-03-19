@@ -7,7 +7,7 @@
 @import 'skills_style.css';
 @import 'experiences_style.css';
 @import 'formations_styles.css';
-@import 'interests_style.css';
+/* @import 'interests_style.css'; */
 @import 'form_style.css';
 @import 'footer_style.css';
 
@@ -26,6 +26,7 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100vw;
 }
 
 body {
@@ -34,5 +35,9 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.home {
+  padding: 0;
 }
 

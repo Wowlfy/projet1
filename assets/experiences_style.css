@@ -1,9 +1,11 @@
-@import url(main.css);
+@import 'main.css';
 
 /* Section de la page experiences.php */
 .body_experiences {
   font-family: var(--titleFont);
   font-size: medium;
+  margin: 0;
+  padding: 0;
 }
 
 /* Le flexbox contient 2 elements ".title_experiences" <-- donc le titre de la page. Et ".timeline" <-- donc le timeline */
