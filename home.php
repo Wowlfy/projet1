@@ -1,6 +1,6 @@
 <link href="assets/home_style.css" rel="stylesheet">
 
-<section class="home">
+<section id="home" class="home">
 
     <div class="heading">
         <div class="mainHeading">

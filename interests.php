@@ -9,17 +9,8 @@
 
 </head>
 
-    
-<!-- 
-Hobby
-Cracking jokes
-
-Shooting
-Watching Captain Kangaroo
--->
-<?php require_once "interests.php" ?>
 <h1>INTERESTS</h1>
-<section class="interests">
+<section class="interests" id="interests">
     <div class="interest">
         <img class="interestPicture" src="/assets/img/smiley.jpeg" alt ="laughing smiley" />
         <div class="interstTitle">Cracking Jokes</div>

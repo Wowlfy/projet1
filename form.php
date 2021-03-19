@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <section class=form>
+    <section class=form id="form">
         <div class=head>
             <br>
             <h1>CONTACT MOI</h1>

@@ -11,7 +11,7 @@
 
 
     <h1>SKILLS</h1>
-    <section class="skills">
+    <section id="skills" class="skills">
         <div class='gauge'>
             <div class="gauge__body">
                 <div class="gauge__fill" id="one"></div>
