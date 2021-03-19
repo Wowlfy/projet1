@@ -1,0 +1,21 @@
+/* Pour importer le fichier main.css sur votre style.css ajoutez "@import '../../main.css';" au début de votre code */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+:root {
+  --mainColor: #131414;
+  --secondaryColor: #d63031;
+  --darkColor: #2d3436;
+  --lightColor: #dfe6e9;
+  --titleFont: 'Anton', sans-serif;
+  --subTitleFont: 'Bebas Neue', cursive;
+  --textFont: 'Questrial', sans-serif;
+  --primaryPadding: 8px;
+  --secondaryPadding: calc(var(--primaryPadding) * 2);
+  --thirdPadding: calc(var(--primaryPadding) * 3);
+}
+
+body {
+  margin: 0;
+}
