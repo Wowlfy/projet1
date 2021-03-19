@@ -8,9 +8,6 @@
     align-items: center;
 }
 
-a {
-    text-decoration: none;
-}
 
 .items a {
     color: var(--lightColor);
@@ -140,4 +137,5 @@ h2 {
     .close {
         display: block;
     }
+
 }
