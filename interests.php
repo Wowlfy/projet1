@@ -8,7 +8,7 @@
     <link rel="Stylesheet" href="interests.css">
 
 </head>
-<body>
+
     
 <!-- 
 Hobby
@@ -33,5 +33,5 @@ Watching Captain Kangaroo
         <div class="interstTitle">Captain Kangaroo</div>
     </div>
 </section>
-</body>
+
 </html>

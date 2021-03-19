@@ -1,4 +1,0 @@
-<?php
-
-$skillOneValue = 50;
-

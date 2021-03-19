@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import '../../main.css';
 
 :root {
     --mainColor: #131414;
@@ -16,14 +14,14 @@
   }
 
 *{
-    background-color: #2d3436;
+    background-color: var(--darkColor);
 }
 
 h1
 {
-    font-family: 'Anton', sans-serif;
+    font-family: var(--titleFont);
     text-align: center;
-    color: #d63031;
+    color: var(--secondaryColor);
     margin-top: 20px;
     font-size: 50px;
 }
@@ -39,9 +37,9 @@ h1
 .gauge {
     width:60%;
     max-width: 200px;
-    font-family: 'Questrial', sans-serif;
+    font-family: var(--textFont);
     font-size:25px;
-    background-color:#2d3436;
+    background-color:var(--darkColor);
 
 }
 
@@ -49,7 +47,7 @@ h1
     width:100%;
     height:0;
     padding-bottom:50%;
-    background:#dfe6e9;
+    background:var(--lightColor);
     position:relative;
     border-top-left-radius:100% 200%;
     border-top-right-radius:100% 200%;
@@ -62,7 +60,7 @@ h1
     left: 0;
     width: inherit;
     height: 100%;
-    background: #d63031;
+    background: var(--secondaryColor);
     transform-origin: center top;
 }
 
@@ -117,7 +115,7 @@ h1
 .gauge__cover{
     width:75%;
     height:150%;
-    background-color: #2d3436;
+    background-color: var(--darkColor);
     border-radius: 50%;
     position: absolute;
     top: 25%;
@@ -130,7 +128,7 @@ h1
     justify-content: center;
     padding-bottom: 25%;
     box-sizing: border-box;
-    color:#dfe6e9;
+    color:var(--lightColor);
 } 
 
 .gauge__legend {
@@ -140,5 +138,5 @@ h1
     justify-content: center;
     padding-bottom: 10%;
     box-sizing: border-box;
-    color:#dfe6e9;
+    color:var(--lightColor);
 }

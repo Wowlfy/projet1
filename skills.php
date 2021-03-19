@@ -9,8 +9,7 @@
     <link rel="Stylesheet" href="skills.css">
 </head>
 
-<body>
-    <?php require_once "skills.php" ?>
+
     <h1>SKILLS</h1>
     <section class="skills">
         <div class='gauge'>
@@ -42,6 +41,6 @@
             <div class="gauge__legend">Skill</div>
         </div>
     </section>
-</body>
+
 
 </html>
