@@ -55,8 +55,7 @@ h1, h2 {
 }
 
 /* La photo de John McClane */
-.photo {
-    width: 50vw;
+.photo;
     height: auto;
 }
 
