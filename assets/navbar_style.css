@@ -3,11 +3,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    margin: 0;
-    background-color: var(--mainColor);
-}
-
 .nav-top {
     background-color: var(--darkColor);
     padding: var(--thirdPadding);
