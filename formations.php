@@ -1,50 +1,60 @@
-<link href="css/formations_styles.css" rel="stylesheet">
-<h2>Formations</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="assets/formations_styles.css" rel="stylesheet">
+</head>
 
-<div class="cards">
-    <div class="card">
-        <div class="card-header">
-            <div class="card-img"></div>
-        </div>
-            <div class="card-body">
-                <h3 class="card-title">High school</h3>
-                <p>High school short description</p>
+<body>
+    
+    <h2>Formations</h2>
+    <div class="carousel">
+        <div class="container">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+
+            <div class="cards">
+                <label class="card" for="item-1" id="photo-1">
+                    <img src="assets/img/graduation.jpeg" alt="photo">
+                </label>
+                <label class="card" for="item-2" id="photo-2">
+                    <img src="assets/img/police_squad.jpg" alt="photo">
+                </label>
+                <label class="card" for="item-3" id="photo-3">
+                    <img src="assets/img/shooting_range.jpeg" alt="photo">
+                </label>
+
+            </div>
+            <div class="player">
+                <div class="upper-part">
+                    <div class="info-area" id="test">
+                        <label class="photo-info" id="photo-info-1">
+                            <div class="title">High school</div>
+                            <div class="sub-line">
+                                <div class="subtitle">Graduation in 1973 - Plainfield High School, NJ</div>
+                            </div>
+                        </label>
+                        <label class="photo-info" id="photo-info-2">
+                            <div class="title">NYPD Police school</div>
+                            <div class="sub-line">
+                                <div class="subtitle">Graduation in 1977</div>
+                            </div>
+                        </label>
+                        <label class="photo-info" id="photo-info-3">
+                            <div class="title">Shooting training</div>
+                            <div class="sub-line">
+                                <div class="subtitle">Mandatory training sessions : twice a year</div>
+                            </div>
+                        </label>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="cards">
-    <div class="card">
-        <div class="card-header">
-            <div class="card-img"></div>
-        </div>
-        <div class="card-body">
-            <h3 class="card-title">Police school</h3>
-            <p>Police school short description</p>
-        </div>
-    </div>
-</div>
-<div class="cards">
-    <div class="card">
-        <div class="card-header">
-            <div class="card-img"></div>
-        </div>
-            <div class="card-body">
-                <h3 class="card-title">Shooting</h3>
-                <p>John McClane at a shooting range</p>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="cards">
-    <div class="card">
-        <div class="card-header">
-            <div class="card-img"></div>
-        </div>
-            <div class="card-body">
-                <h3 class="card-title">Piloting</h3>
-                <p>John McClane in front of an helicopter</p>
-            </div>
-        </div>
-    </div>
-</div>
+</body>
+</html>
