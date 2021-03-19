@@ -1,7 +1,4 @@
 @import 'main.css';
-html {
-    scroll-behavior: smooth;
-}
 
 .nav-top {
     background-color: var(--darkColor);
