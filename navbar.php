@@ -10,81 +10,66 @@
     <title>Document</title>
 </head>
 
-<body>
-    <header>
-        <nav class="nav-top">
-            <div class="logo-nav">
-                <a class="logo-nav-john" href="#home">
-                    JOHN
-                </a>
-                <a class="logo-nav-mcclane" href="#home">
-                    MCCLANE
-                </a>
-            </div>
-            <a class="contact-me" href="#form">
-                CONTACT ME
-            </a>
-        </nav>
+<header>
 
-        <nav class="nav-left">
+    <nav class="nav-top">
+        <div class="logo-nav">
+            <a class="logo" href="#home">
+                JOHN
+                <span>MCCLANE</span>
+            </a>
+        </div>
+
+        <div class="items" id="items">
             <a href="#home">
-                <i class="fas fa-circle"></i>
+                Home
             </a>
             <a href="#skills">
-                <i class="fas fa-circle"></i>
+                Skills
             </a>
             <a href="#experiences">
-                <i class="fas fa-circle"></i>
+                Experiences
             </a>
             <a href="#formations">
-                <i class="fas fa-circle"></i>
+                Formations
             </a>
             <a href="#interests">
-                <i class="fas fa-circle"></i>
+                Interests
             </a>
-            <a href="#form">
-                <i class="fas fa-circle"></i>
+            <a class="contact-me" href="#form">
+                Contact Me
             </a>
-        </nav>
+            <a class="close" href="#close">
+                <i class="far fa-times-circle"></i>
+            </a>
+        </div>
 
-    </header>
+        <a class="burger" href="#items">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
 
-    <section id="home">
-        <h2>YIPPEE KAI</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sint dignissimos, amet recusandae exercitationem tempore, nemo sapiente consequatur nisi quibusdam consectetur repellendus aut consequuntur harum blanditiis explicabo delectus incidunt dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolorem nobis accusamus qui numquam quibusdam? Eveniet corrupti voluptates dolore nam repellendus dicta quis quo, sint enim. Possimus, ex. Cumque, magnam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error dolorum sit dolore, harum suscipit temporibus debitis ad omnis deserunt quasi, commodi natus ipsum sapiente eveniet aspernatur architecto quidem modi. Optio.
-        </p>
-    </section>
-    <section id="skills">
-        <h2>SKILLS</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sint dignissimos, amet recusandae exercitationem tempore, nemo sapiente consequatur nisi quibusdam consectetur repellendus aut consequuntur harum blanditiis explicabo delectus incidunt dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolorem nobis accusamus qui numquam quibusdam? Eveniet corrupti voluptates dolore nam repellendus dicta quis quo, sint enim. Possimus, ex. Cumque, magnam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error dolorum sit dolore, harum suscipit temporibus debitis ad omnis deserunt quasi, commodi natus ipsum sapiente eveniet aspernatur architecto quidem modi. Optio.
-        </p>
-    </section>
-    <section id="experiences">
-        <h2>EXPERIENCES</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sint dignissimos, amet recusandae exercitationem tempore, nemo sapiente consequatur nisi quibusdam consectetur repellendus aut consequuntur harum blanditiis explicabo delectus incidunt dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolorem nobis accusamus qui numquam quibusdam? Eveniet corrupti voluptates dolore nam repellendus dicta quis quo, sint enim. Possimus, ex. Cumque, magnam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error dolorum sit dolore, harum suscipit temporibus debitis ad omnis deserunt quasi, commodi natus ipsum sapiente eveniet aspernatur architecto quidem modi. Optio.
-        </p>
-    </section>
-    <section id="formations">
-        <h2>FORMATIONS</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sint dignissimos, amet recusandae exercitationem tempore, nemo sapiente consequatur nisi quibusdam consectetur repellendus aut consequuntur harum blanditiis explicabo delectus incidunt dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolorem nobis accusamus qui numquam quibusdam? Eveniet corrupti voluptates dolore nam repellendus dicta quis quo, sint enim. Possimus, ex. Cumque, magnam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error dolorum sit dolore, harum suscipit temporibus debitis ad omnis deserunt quasi, commodi natus ipsum sapiente eveniet aspernatur architecto quidem modi. Optio.
-        </p>
-    </section>
-    <section id="interests">
-        <h2>INTERESTS</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sint dignissimos, amet recusandae exercitationem tempore, nemo sapiente consequatur nisi quibusdam consectetur repellendus aut consequuntur harum blanditiis explicabo delectus incidunt dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolorem nobis accusamus qui numquam quibusdam? Eveniet corrupti voluptates dolore nam repellendus dicta quis quo, sint enim. Possimus, ex. Cumque, magnam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error dolorum sit dolore, harum suscipit temporibus debitis ad omnis deserunt quasi, commodi natus ipsum sapiente eveniet aspernatur architecto quidem modi. Optio.
-        </p>
-    </section>
-    <section id="form">
-        <h2>FORM</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sint dignissimos, amet recusandae exercitationem tempore, nemo sapiente consequatur nisi quibusdam consectetur repellendus aut consequuntur harum blanditiis explicabo delectus incidunt dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolorem nobis accusamus qui numquam quibusdam? Eveniet corrupti voluptates dolore nam repellendus dicta quis quo, sint enim. Possimus, ex. Cumque, magnam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error dolorum sit dolore, harum suscipit temporibus debitis ad omnis deserunt quasi, commodi natus ipsum sapiente eveniet aspernatur architecto quidem modi. Optio.
-        </p>
-    </section>
-</body>
+    <nav class="nav-left">
+        <a href="#home">
+            <i class="fas fa-circle"></i>
+        </a>
+        <a href="#skills">
+            <i class="fas fa-circle"></i>
+        </a>
+        <a href="#experiences">
+            <i class="fas fa-circle"></i>
+        </a>
+        <a href="#formations">
+            <i class="fas fa-circle"></i>
+        </a>
+        <a href="#interests">
+            <i class="fas fa-circle"></i>
+        </a>
+        <a href="#form">
+            <i class="fas fa-circle"></i>
+        </a>
+    </nav>
+
+</header>
 
 </html>
