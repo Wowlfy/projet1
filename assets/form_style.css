@@ -5,13 +5,14 @@
 }
 
 .form {
-    background-color: var(--mainColor);
+    background-color: var(--darkColor);
     
 }
 
 .head {
     color: var(--secondaryColor);
     font-family: var(--titleFont);
+    text-align: center;
 }
 
 .formText {
@@ -45,6 +46,8 @@
     border: 1px solid transparent;
     -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
     transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    background-color: var(--secondaryColor);
+    color: var(--lightColor);
 }
 
 .button::before {
@@ -55,8 +58,8 @@
     z-index: -1;
     width: 0%;
     height: 1px;
-    background: var(--secondaryColor);
-    box-shadow: inset 0px 0px 0pxvar(var(--lightColor));
+    background-color: var(--secondaryColor);
+    box-shadow: inset 0px 0px 0px var(--lightColor);
     display: block;
     -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
     transition: all 0.4s cubic-bezier(.5, .24, 0, 1)

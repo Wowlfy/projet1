@@ -5,7 +5,8 @@
   font-family: var(--titleFont);
   font-size: medium;
   margin: 0;
-  padding: 0;
+  padding: var(--thirdPadding) 0;
+  background-color: var(--mainColor);
 }
 
 /* Le flexbox contient 2 elements ".title_experiences" <-- donc le titre de la page. Et ".timeline" <-- donc le timeline */
@@ -14,7 +15,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: var(--mainColor);
   flex-direction: column;
   width: 100vw;
   height: 100vh;
