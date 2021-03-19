@@ -16,6 +16,14 @@
   --thirdPadding: calc(var(--primaryPadding) * 3);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
