@@ -96,7 +96,7 @@
 .timeline .swiper-slide .timeline-year {
   font-style: italic;
   font-size: 42px;
-  color: orange;
+  color: var(--secondaryColor);
   font-weight: 300;
   opacity: 0;
   transition: 0.2s ease 0.4s;
@@ -196,12 +196,12 @@
 
 /* Le timeline la dates sur la barre encours */
 .timeline .swiper-pagination-bullet-active {
-  color: orange;
+  color: var(--secondaryColor);
 }
 /* Le timeline la boule sur la barre encours */
 .timeline .swiper-pagination-bullet-active::before {
   transform: scale(1); /* transforme --> 0 = cacher et 1 = afficher */
-  background-color: orange;
+  background-color: var(--secondaryColor);
 }
 
 .timeline .swiper-button-next,
@@ -219,7 +219,7 @@
 /* La fleche pointant vers la gauche/haut */
 .timeline .swiper-button-prev {
   left: 8%;
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23d4a024'%2F%3E%3C%2Fsvg%3E");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/05/Red_Arrow_Left.png");
 }
 .timeline .swiper-button-prev:hover {
   transform: translateX(-3px);
@@ -227,7 +227,7 @@
 /* La fleche pointant vers la droite/bas */
 .timeline .swiper-button-next {
   right: 8%;
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23d4a024'%2F%3E%3C%2Fsvg%3E");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Red_Arrow_Right.svg/600px-Red_Arrow_Right.svg.png");
 }
 .timeline .swiper-button-next:hover {
   transform: translateX(3px);
