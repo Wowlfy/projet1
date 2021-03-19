@@ -16,7 +16,7 @@
   align-items: center;
   flex-direction: column;
   flex-direction: column;
-  width: 100vw;
+  width: auto;
   height: 100vh;
   justify-content: space-between;
 }

@@ -11,14 +11,13 @@
 <body>
     <section class=form id="form">
         <div class=head>
-            <h1>CONTACT MOI</h1>
+            <h1>CONTACT ME</h1>
         </div>
         <div class=formText>
-            <input type="text" style="width:300px" placeholder="Nom" id="lastName" />
-            <input type="text" style="width:300px" placeholder="Prenom" id="firstName" />
-            <input type="email" style="width:300px" placeholder="Email" id="email" />
-            <label>Commentaire</label>
-            <textarea id="comments" style="width:300px" rows="4"></textarea>
+            <input type="text" placeholder="First Name" id="lastName" />
+            <input type="text" placeholder="Last Name" id="firstName" />
+            <input type="email" placeholder="Email" id="email" />
+            <textarea id="comments" placeholder="Message" rows="4"></textarea>
         </div>
         <div class="wrapper">
             <a href="#" class="button">Envoyer</a>

@@ -22,8 +22,14 @@
     flex-direction: column;
 }
 
+.formText input, textarea {
+    width: 50%;
+    padding: var(--secondaryPadding);
+    margin-bottom: var(--primaryPadding);
+}
+
 .wrapper {
-    margin: 80px auto;
+    margin: var(--secondaryPadding);
     text-align: center;
     width: 100%;
     position: relative;

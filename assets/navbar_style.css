@@ -113,30 +113,3 @@ h2 {
     right: var(--secondaryPadding);
     display: none;
 }
-
-@media screen and (max-width: 600px) {
-    .nav-left {
-        display: none;
-    }
-
-    section {
-        display: none;
-    }
-
-    .burger {
-        display: block;
-    }
-
-    .items {
-        display: none;
-    }
-
-    .nav-top {
-        padding: var(--secondaryPadding);
-    }
-
-    .close {
-        display: block;
-    }
-
-}

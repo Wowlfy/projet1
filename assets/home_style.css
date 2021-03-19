@@ -2,6 +2,7 @@
 .heading {
     display: flex;
     flex-direction: column;
+    width: auto;
 }
 
 /* Contient l'image de New York en arriere plan */
@@ -13,7 +14,7 @@
     background-image: url("img/new_york.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100vw;
+    width: auto;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -106,13 +107,4 @@
     align-items: center;
     width: 3vw;
     height: 6vh;
-}
-
-@media screen and (max-width: 900px) {
-    /* Ici le flexbox contient 2 elements : ".photo", ".bio_text" */
-    .bioHeading {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 }
