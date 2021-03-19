@@ -45,7 +45,7 @@
 .timeline .swiper-container {
   height: 85vh;
   width: 100%;
-  position: relative;
+  position: relative; 
 }
 
 /* c'est l'embalage de images de timelines */

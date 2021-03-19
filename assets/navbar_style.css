@@ -1,5 +1,4 @@
 @import 'main.css';
-
 .nav-top {
     background-color: var(--darkColor);
     padding: var(--thirdPadding);
@@ -7,7 +6,6 @@
     justify-content: space-between;
     align-items: center;
 }
-
 
 .items a {
     color: var(--lightColor);
@@ -112,4 +110,33 @@ h2 {
     top: var(--thirdPadding);
     right: var(--secondaryPadding);
     display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-left {
+        display: none;
+    }
+    section {
+        display: n one;
+    }
+    .burger {
+        display: block;
+    }
+    .items {
+        display: none;
+    }
+    .nav-top {
+        padding: var(--secondaryPadding);
+    }
+    .close {
+        display: block;
+    }
+    .items a {
+        font-size: 1.4em;
+        padding: 0 var(--primaryPadding);
+    }
+    .all-rights {
+        margin-top: var(--secondaryPadding);
+        font-size: 0.8em;
+    }
 }

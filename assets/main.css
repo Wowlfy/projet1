@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
-@import 'navbar_style.css';
+/* @import 'navbar_style.css';
 @import 'home_style.css';
 @import 'skills_style.css';
 @import 'experiences_style.css';
 @import 'formations_styles.css';
-/* @import 'interests_style.css'; */
-
+@import 'interests_style.css'; 
 @import 'form_style.css';
-@import 'footer_style.css';
+@import 'footer_style.css';*/
 :root {
   --mainColor: #131414;
   --secondaryColor: #d63031;
@@ -36,9 +35,6 @@ a {
   text-decoration: none;
 }
 
-.home {
-  padding: 0;
-}
 
 h1, h2, h3 {
   text-transform: uppercase;
@@ -49,7 +45,7 @@ h1 {
   font-size: 5em;
 }
 
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
   .container {
     width: 75vw;
     max-width: 800px;
@@ -146,4 +142,4 @@ h1 {
     flex-direction: column;
     align-items: center;
   }
-}
+}*/
