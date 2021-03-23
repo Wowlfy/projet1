@@ -9,8 +9,8 @@
     <link rel="Stylesheet" href="assets/skills_style.css">
 
 </head>
-
-<h1>SKILLS</h1>
+<div class="skills-main">
+<h2>SKILLS</h2>
 <section class="skills">
     <div class='gauge'>
         <div class="gauge__body">
@@ -40,6 +40,21 @@
         </div>
         <div class="gauge__legend">Charisma</div>
     </div>
+    <div class='gauge'>
+        <div class="gauge__body">
+            <div class="gauge__fill" id="five"></div>
+            <div class="gauge__cover" data-value="95">95%</div>
+        </div>
+        <div class="gauge__legend">Hand-to-hand combat</div>
+    </div>
+    <div class='gauge'>
+        <div class="gauge__body">
+            <div class="gauge__fill" id="six"></div>
+            <div class="gauge__cover" data-value="85">85%</div>
+        </div>
+        <div class="gauge__legend">Stamina</div>
+    </div>
 </section>
+</div>
 
 </html>

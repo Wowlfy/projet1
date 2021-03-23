@@ -6,20 +6,12 @@
 
     <div class="heading">
         <div class="mainHeading">
-<<<<<<< HEAD
-            <div class=titles>
-                <h1>Hello I'm John McClane</h1>
-                <h2>Lieutenant de la Police de New York</h2>
-            </div>
-            <a href="#aboutMe"><img class="arrow" src="assets/img/arrow.png" alt="fleche"></a>
-=======
             <div class="titles">
                 <h1>Hello I'm John McClane</h1>
                 <h2>Lieutenant de la Police de New York</h2>
             </div>
 
             <a href="#about"><img class="arrow" src="assets/img/arrow.png" alt="fleche"></a>
->>>>>>> 1d3b1bfcdb29cd7a54c83ca2836b89ddd8b75859
         </div>
 
         <div class="bioHeading" id="about">

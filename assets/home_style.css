@@ -1,13 +1,11 @@
-@import url(main.css);
-<<<<<<< HEAD
+@import 'main.css';
 
-html {
-    scroll-behavior: smooth;
+.home{
+    background-color: var(--mainColor);
+    padding: 0;
+    height: auto;
 }
 
-/* Ici le flexbox contient 2 elements : ".mainHeading" et ".bioHeading" */
-=======
->>>>>>> 1d3b1bfcdb29cd7a54c83ca2836b89ddd8b75859
 .heading {
     display: flex;
     flex-direction: column;
@@ -23,18 +21,13 @@ html {
     background-image: url("img/new_york.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-<<<<<<< HEAD
-    width: 100vw;
-=======
-    width: auto;
->>>>>>> 1d3b1bfcdb29cd7a54c83ca2836b89ddd8b75859
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
-
 
 /* les titres H1 et H2 */
 
@@ -45,11 +38,9 @@ html {
     font-weight: bold;
     position: relative;
     font-size: 300%;
-<<<<<<< HEAD
-    text-shadow: 2px 2px 8px white;
-=======
     text-transform: uppercase;
->>>>>>> 1d3b1bfcdb29cd7a54c83ca2836b89ddd8b75859
+    padding: 50px;
+
 }
 
 .titles {
@@ -62,26 +53,31 @@ html {
 
 .bioHeading {
     display: flex;
-    justify-content: flex-start;
-<<<<<<< HEAD
-    background-color: var(--darkColor);
-    width: 100vw;
-=======
+    justify-content: center;
     background-color: var(--mainColor);
->>>>>>> 1d3b1bfcdb29cd7a54c83ca2836b89ddd8b75859
     height: auto;
-    padding: calc(var(--thirdPadding)*2);
+    /*padding: calc(var(--thirdPadding)*2);*/
+    width: 100%;
+    padding: 0px;
+    align-items: center;
 }
 
 /* La photo de John McClane */
-<<<<<<< HEAD
-.photo;
-    height: auto;
-=======
 
 .photo {
+    display: flex;
     margin-bottom: var(--thirdPadding);
->>>>>>> 1d3b1bfcdb29cd7a54c83ca2836b89ddd8b75859
+    width: 30%;
+    height: auto;
+}
+
+/* La photo de John McClane */
+
+.photo2 {
+    margin-bottom: var(--thirdPadding);
+    width: 150%;
+    height: auto;
+    margin: 0px;
 }
 
 /* Ici c'est la BIographie de John McClane, le flexbox contient 2 elements et ".h3", ".p", ".arrow" */
@@ -91,8 +87,9 @@ html {
     flex-direction: column;
     align-items: center;
     color: var(--lightColor);
-    text-align: center;
     padding: 0 var(--thirdPadding);
+    font-size: 100%;
+    width: 70%;
 }
 
 .home h3 {
@@ -105,12 +102,12 @@ html {
 }
 
 .home p {
-    text-align: center;
     font-family: var(--textFont);
     font-size: 1.2em;
 }
 
 /* l'image de la fleche */
+
 @keyframes down {
     0% {
         position: relative;
@@ -136,12 +133,9 @@ html {
     height: 6vh;
 }
 
-@media screen and (max-width: 900px)
-{
-    /* Ici le flexbox contient 2 elements : ".photo", ".bio_text" */
+@media all and (max-width: 600px) {
     .bioHeading {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      display: flex;
+      flex-direction: column;
     }
-}
+  }

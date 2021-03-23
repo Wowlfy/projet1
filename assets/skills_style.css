@@ -1,24 +1,35 @@
 @import 'main.css';
-.skills-main {
-    background-color: var(--darkColor);
-    margin: 0;
-    padding: var(--thirdPadding);
-}
 
-.skills-main h1 {
+.skills-main h2 {
     font-family: var(--titleFont);
     text-align: center;
     color: var(--secondaryColor);
-    margin-top: 20px;
     font-size: 50px;
-    margin: var(--thirdPadding) 0;
+    margin: 0;
 }
+
+.skills-main {
+    margin: 0;
+    padding: 0;
+    width:auto;
+    height: 100vh;
+    background: rgb(45,52,54);
+    background: linear-gradient(214deg, rgba(45,52,54,1) 0%, rgba(214,48,49,1) 50%, rgba(19,20,20,1) 100%); 
+    background-image: url(img/skills_background.jpg);
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+}
+
+
 
 .skills {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: stretch;
+    align-items: stretch ;
     flex-wrap: wrap;
 }
 
@@ -30,6 +41,7 @@
     background-color: var(--darkColor);
     border-radius: 8px;
     margin: var(--thirdPadding) 0;
+    padding:8px;
 }
 
 .gauge__body {
@@ -56,24 +68,24 @@
 #one {
     transform: rotate(0.250turn);
     transition-property: transform;
-    transition-duration: 2s;
+    transition-duration: 4s;
     transition-timing-function: ease;
     transition-delay: 0s;
 }
 
-#one:hover {
+#one:focus-visible {
     transform: rotate(0turn);
 }
 
 #two {
     transform: rotate(0.125turn);
     transition-property: transform;
-    transition-duration: 2s;
+    transition-duration: 4s;
     transition-timing-function: ease;
     transition-delay: 0s;
 }
 
-#two:focus {
+#two:focus-visible {
     transform: rotate(0turn);
 }
 
@@ -82,24 +94,50 @@
     transition-property: transform;
     transition-duration: 4s;
     transition-timing-function: ease;
-    transition-delay: 0.5s;
+    transition-delay: 0s;
 }
 
-#three:focus {
+#three:focus-visible {
     transform: rotate(0turn);
 }
 
 #four {
     transform: rotate(0.450turn);
     transition-property: transform;
-    transition-duration: 2s;
+    transition-duration: 4s;
     transition-timing-function: ease;
     transition-delay: 0s;
 }
 
-#four:focus {
+#four:focus-visible {
     transform: rotate(0turn);
 }
+
+#five {
+    transform: rotate(0.455turn);
+    transition-property: transform;
+    transition-duration: 4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+#five:focus-visible {
+    transform: rotate(0turn);
+}
+
+
+#six {
+    transform: rotate(0.425turn);
+    transition-property: transform;
+    transition-duration: 4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+#six:focus-visible {
+    transform: rotate(0turn);
+}
+
 
 .gauge__cover {
     width: 75%;
