@@ -10,24 +10,40 @@
 
 </head>
 
-<div class="interests-main">
+<section>
 
-    <h1>INTERESTS</h1>
-    <section class="interests" id="interests">
-        <div class="interest">
-            <img class="interestPicture" src="/assets/img/smiley.jpeg" alt="laughing smiley" />
-            <div class="interstTitle">Cracking Jokes</div>
-        </div>
-        <div class="interest">
-            <img class="interestPicture" src="/assets/img/target.png" alt="target" />
-            <div class="interstTitle">Shooting</div>
-        </div>
-        <div class="interest">
-            <img class="interestPicture" src="/assets/img/captain.jpg" alt="captain Kangaroo" />
-            <div class="interstTitle">Captain Kangaroo</div>
-        </div>
-    </section>
+    <h2>INTERESTS</h2>
+    <h3>Some things about me</h3>
 
-</div>
+    <div class="interests-main">
+
+        <div class="container">
+            <img src="https://picsum.photos/1000/300" alt="Avatar" class="image">
+            <div class="overlay">
+                <div class="text">Hello World</div>
+                <p>I'm a funny guy</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <img src="https://picsum.photos/1000/300" alt="Avatar" class="image">
+            <div class="overlay">
+                <div class="text">Hello Magic</div>
+                <p>I'm a funny guy</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <img src="https://picsum.photos/1000/300" alt="Avatar" class="image">
+            <div class="overlay">
+                <div class="text">Hello Truc</div>
+                <p>I'm a funny guy</p>
+            </div>
+        </div>
+    </div>
+
+</section>
 
 </html>
+
+<!-- Cracking Jokes / Shooting / Captain Kangaroo -->
