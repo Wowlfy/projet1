@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills</title>
     <link rel="Stylesheet" href="assets/skills_style.css">
-
+    <script> src=skills_script.js </script>
+        </script>
 </head>
 <div class="skills-main">
 <h2>SKILLS</h2>
 <section class="skills">
     <script>
-        
+
     </script>
     <div class='gauge'>
         <div class="gauge__body">
