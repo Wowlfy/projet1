@@ -1,0 +1,98 @@
+@import 'main.css';
+
+.menu li {
+    display: inline-block;
+}
+
+.form {
+    background-color: var(--darkColor);
+    
+}
+
+.head {
+    color: var(--secondaryColor);
+    font-family: var(--titleFont);
+    text-align: center;
+}
+
+.formText {
+    font-family: var(--textFont) vertical;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formText input, textarea {
+    width: 50%;
+    padding: var(--secondaryPadding);
+    margin-bottom: var(--primaryPadding);
+}
+
+.wrapper {
+    margin: var(--secondaryPadding);
+    text-align: center;
+    width: 100%;
+    position: relative;
+    font-family: var(--textFont);
+}
+
+.button {
+    padding: 15px 100px;
+    margin: 10px 4px;
+    color: var(--secondaryColor);
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    font-family: var(--textFont);
+}
+
+.button {
+    border: 1px solid transparent;
+    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    background-color: var(--secondaryColor);
+    color: var(--lightColor);
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: -1;
+    width: 0%;
+    height: 1px;
+    background-color: var(--secondaryColor);
+    box-shadow: inset 0px 0px 0px var(--lightColor);
+    display: block;
+    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+}
+
+.button:hover::before {
+    width: 100%;
+}
+
+.button::after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: -1;
+    width: 0%;
+    height: 1px;
+    background: var(--lightColor);
+    -webkit-transition: all 0.4s cubic-bezier(.7, .25, 0, 1);
+    transition: all 0.4s cubic-bezier(.7, .25, 0, 1)
+}
+
+.button:hover::after {
+    width: 100%;
+}
+
+.button:hover {
+    border-left: 1px solid var(--secondaryColor);
+    border-right: 1px solid var(--secondaryColor);
+}
