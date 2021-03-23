@@ -12,6 +12,9 @@
 <div class="skills-main">
 <h2>SKILLS</h2>
 <section class="skills">
+    <script>
+        
+    </script>
     <div class='gauge'>
         <div class="gauge__body">
             <div class="gauge__fill" id="one"></div>

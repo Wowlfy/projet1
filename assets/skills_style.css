@@ -66,76 +66,113 @@
 }
 
 #one {
-    transform: rotate(0.250turn);
-    transition-property: transform;
-    transition-duration: 4s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
+    animation-play-state:running;
+    animation-duration: 4s;
+    animation-name: gaugeFill1;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
 }
 
-#one:focus-visible {
-    transform: rotate(0turn);
+@keyframes gaugeFill1 {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(0.250turn);
+    }
 }
+
 
 #two {
-    transform: rotate(0.125turn);
-    transition-property: transform;
-    transition-duration: 4s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
+    animation-play-state:running;
+    animation-duration: 4s;
+    animation-name: gaugeFill2;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
 }
 
-#two:focus-visible {
-    transform: rotate(0turn);
+@keyframes gaugeFill2 {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(0.125turn);
+    }
 }
 
 #three {
-    transform: rotate(0.375turn);
-    transition-property: transform;
-    transition-duration: 4s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
+    animation-play-state:running;
+    animation-duration: 4s;
+    animation-name: gaugeFill3;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
 }
 
-#three:focus-visible {
-    transform: rotate(0turn);
+@keyframes gaugeFill3 {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(0.375turn);
+    }
 }
 
 #four {
-    transform: rotate(0.450turn);
-    transition-property: transform;
-    transition-duration: 4s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
+    animation-play-state:running;
+    animation-duration: 4s;
+    animation-name: gaugeFill4;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
 }
 
-#four:focus-visible {
-    transform: rotate(0turn);
+@keyframes gaugeFill4 {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(0.450turn);
+    }
 }
 
 #five {
-    transform: rotate(0.455turn);
-    transition-property: transform;
-    transition-duration: 4s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
+    animation-play-state:running;
+    animation-duration: 4s;
+    animation-name: gaugeFill5;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
 }
 
-#five:focus-visible {
-    transform: rotate(0turn);
+@keyframes gaugeFill5 {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(0.455turn);
+    }
 }
 
 
 #six {
-    transform: rotate(0.425turn);
-    transition-property: transform;
-    transition-duration: 4s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
+    animation-play-state:running;
+    animation-duration: 4s;
+    animation-name: gaugeFill6;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
 }
 
-#six:focus-visible {
-    transform: rotate(0turn);
+@keyframes gaugeFill6 {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(0.445turn);
+    }
 }
 
 
