@@ -28,6 +28,8 @@
     font-family: var(--textFont);
     font-size: 25px;
     background-color: var(--darkColor);
+    border-radius: 8px;
+    margin: var(--thirdPadding) 0;
 }
 
 .gauge__body {
