@@ -1,22 +1,32 @@
+<html>
 <link href="assets/home_style.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <section id="home" class="home">
 
     <div class="heading">
         <div class="mainHeading">
+<<<<<<< HEAD
+            <div class=titles>
+                <h1>Hello I'm John McClane</h1>
+                <h2>Lieutenant de la Police de New York</h2>
+            </div>
+            <a href="#aboutMe"><img class="arrow" src="assets/img/arrow.png" alt="fleche"></a>
+=======
             <div class="titles">
                 <h1>Hello I'm John McClane</h1>
                 <h2>Lieutenant de la Police de New York</h2>
             </div>
 
             <a href="#about"><img class="arrow" src="assets/img/arrow.png" alt="fleche"></a>
+>>>>>>> 1d3b1bfcdb29cd7a54c83ca2836b89ddd8b75859
         </div>
 
         <div class="bioHeading" id="about">
 
             <img class="photo" src="assets/img/john_mcclane.png" alt="John McCane">
             <div class="bioText">
-                <h3>ABout Me</h3>
+                <h3 id="aboutMe">ABout Me</h3>
                 <p>
                     Jeunesse
                     John McClane, Sr. est né le 19 mars 1955 à Plainfield, au New Jersey, au
@@ -44,3 +54,4 @@
         </div>
     </div>
 </section>
+</html>

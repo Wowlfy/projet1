@@ -1,4 +1,13 @@
 @import url(main.css);
+<<<<<<< HEAD
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Ici le flexbox contient 2 elements : ".mainHeading" et ".bioHeading" */
+=======
+>>>>>>> 1d3b1bfcdb29cd7a54c83ca2836b89ddd8b75859
 .heading {
     display: flex;
     flex-direction: column;
@@ -14,13 +23,18 @@
     background-image: url("img/new_york.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+<<<<<<< HEAD
+    width: 100vw;
+=======
     width: auto;
+>>>>>>> 1d3b1bfcdb29cd7a54c83ca2836b89ddd8b75859
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
+
 
 /* les titres H1 et H2 */
 
@@ -31,7 +45,11 @@
     font-weight: bold;
     position: relative;
     font-size: 300%;
+<<<<<<< HEAD
+    text-shadow: 2px 2px 8px white;
+=======
     text-transform: uppercase;
+>>>>>>> 1d3b1bfcdb29cd7a54c83ca2836b89ddd8b75859
 }
 
 .titles {
@@ -45,15 +63,25 @@
 .bioHeading {
     display: flex;
     justify-content: flex-start;
+<<<<<<< HEAD
+    background-color: var(--darkColor);
+    width: 100vw;
+=======
     background-color: var(--mainColor);
+>>>>>>> 1d3b1bfcdb29cd7a54c83ca2836b89ddd8b75859
     height: auto;
     padding: calc(var(--thirdPadding)*2);
 }
 
 /* La photo de John McClane */
+<<<<<<< HEAD
+.photo;
+    height: auto;
+=======
 
 .photo {
     margin-bottom: var(--thirdPadding);
+>>>>>>> 1d3b1bfcdb29cd7a54c83ca2836b89ddd8b75859
 }
 
 /* Ici c'est la BIographie de John McClane, le flexbox contient 2 elements et ".h3", ".p", ".arrow" */
@@ -83,7 +111,6 @@
 }
 
 /* l'image de la fleche */
-
 @keyframes down {
     0% {
         position: relative;
@@ -107,4 +134,14 @@
     align-items: center;
     width: 3vw;
     height: 6vh;
+}
+
+@media screen and (max-width: 900px)
+{
+    /* Ici le flexbox contient 2 elements : ".photo", ".bio_text" */
+    .bioHeading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
