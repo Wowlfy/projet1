@@ -238,7 +238,7 @@
 
 /* ICI ---> media screen <---- */
 /*******************************/
-
+/*
 @media screen and (min-width: 768px) {
 
   .body_experiences {
@@ -289,7 +289,7 @@
   .timeline .swiper-button-next:hover {
     transform: rotate(90deg) translate(3px, 10px);
   }
-}
+}*//*
 @media screen and (min-width: 1024px) {
   .timeline .swiper-slide::after {
     right: -20%;
@@ -301,4 +301,4 @@
   .timeline .swiper-slide-content {
     right: 25%;
   }
-}
+}*/
