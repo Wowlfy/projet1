@@ -1,37 +1,77 @@
-@import url(main.css);
+@import 'main.css';
+.home {
+    background-color: var(--mainColor);
+    padding: 0;
+    height: auto;
+}
+
 .heading {
     display: flex;
     flex-direction: column;
     width: auto;
 }
 
+
 /* Contient l'image de New York en arriere plan */
 
-.mainHeading {
+.bg-image {
     background-color: var(--mainColor);
     color: var(--secondaryColor);
     text-align: center;
-    background-image: url("img/new_york.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: auto;
+    width: 100%;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    background: url("img/new_york.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
+
+.mainHeading {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 40em;
+    padding: 8px;
+    text-align: center;
+}
+
 
 /* les titres H1 et H2 */
 
-.home h1, h2 {
-    color: var(--secondaryColor);
+.home h1 {
+    color: var(--lightColor);
     text-align: center;
     font-family: var(--titleFont);
     font-weight: bold;
     position: relative;
-    font-size: 300%;
+    font-size: 3em;
     text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.home h1 span {
+    color: var(--secondaryColor);
+}
+
+h2 {
+    color: var(--lightColor);
+    text-align: center;
+    font-family: var(--subTitleFont);
+    position: relative;
+    font-size: 1.8em;
+}
+
+.home h2 span {
+    color: var(--secondaryColor);
 }
 
 .titles {
@@ -40,21 +80,40 @@
     flex-direction: column;
 }
 
+
 /* Ici le flexbox contient 2 elements : ".photo", ".bio_text" */
 
 .bioHeading {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     background-color: var(--mainColor);
     height: auto;
-    padding: calc(var(--thirdPadding)*2);
+    /*padding: calc(var(--thirdPadding)*2);*/
+    width: 100%;
+    padding: 0px;
+    align-items: center;
 }
+
 
 /* La photo de John McClane */
 
 .photo {
+    display: flex;
     margin-bottom: var(--thirdPadding);
+    width: 30%;
+    height: auto;
 }
+
+
+/* La photo de John McClane */
+
+.photo2 {
+    margin-bottom: var(--thirdPadding);
+    width: 150%;
+    height: auto;
+    margin: 0px;
+}
+
 
 /* Ici c'est la BIographie de John McClane, le flexbox contient 2 elements et ".h3", ".p", ".arrow" */
 
@@ -63,8 +122,9 @@
     flex-direction: column;
     align-items: center;
     color: var(--lightColor);
-    text-align: center;
     padding: 0 var(--thirdPadding);
+    font-size: 100%;
+    width: 70%;
 }
 
 .home h3 {
@@ -77,10 +137,10 @@
 }
 
 .home p {
-    text-align: center;
     font-family: var(--textFont);
     font-size: 1.2em;
 }
+
 
 /* l'image de la fleche */
 
@@ -104,7 +164,15 @@
 
 .arrow {
     animation: down 1s infinite linear alternate;
-    align-items: center;
+    z-index: 3;
     width: 3vw;
     height: 6vh;
+    bottom: 90%;
+}
+
+@media all and (max-width: 600px) {
+    .bioHeading {
+        display: flex;
+        flex-direction: column;
+    }
 }
