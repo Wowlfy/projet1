@@ -1,4 +1,11 @@
-@import url(main.css);
+@import 'main.css';
+
+.home{
+    background-color: var(--mainColor);
+    padding: 0;
+    height: auto;
+}
+
 .heading {
     display: flex;
     flex-direction: column;
@@ -14,7 +21,7 @@
     background-image: url("img/new_york.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    width: auto;
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -32,6 +39,8 @@
     position: relative;
     font-size: 300%;
     text-transform: uppercase;
+    padding: 50px;
+
 }
 
 .titles {
@@ -44,16 +53,31 @@
 
 .bioHeading {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     background-color: var(--mainColor);
     height: auto;
-    padding: calc(var(--thirdPadding)*2);
+    /*padding: calc(var(--thirdPadding)*2);*/
+    width: 100%;
+    padding: 0px;
+    align-items: center;
 }
 
 /* La photo de John McClane */
 
 .photo {
+    display: flex;
     margin-bottom: var(--thirdPadding);
+    width: 30%;
+    height: auto;
+}
+
+/* La photo de John McClane */
+
+.photo2 {
+    margin-bottom: var(--thirdPadding);
+    width: 150%;
+    height: auto;
+    margin: 0px;
 }
 
 /* Ici c'est la BIographie de John McClane, le flexbox contient 2 elements et ".h3", ".p", ".arrow" */
@@ -63,8 +87,9 @@
     flex-direction: column;
     align-items: center;
     color: var(--lightColor);
-    text-align: center;
     padding: 0 var(--thirdPadding);
+    font-size: 100%;
+    width: 70%;
 }
 
 .home h3 {
@@ -77,7 +102,6 @@
 }
 
 .home p {
-    text-align: center;
     font-family: var(--textFont);
     font-size: 1.2em;
 }
@@ -108,3 +132,10 @@
     width: 3vw;
     height: 6vh;
 }
+
+@media all and (max-width: 600px) {
+    .bioHeading {
+      display: flex;
+      flex-direction: column;
+    }
+  }

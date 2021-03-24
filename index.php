@@ -9,7 +9,11 @@
     <title>John McClane</title>
 </head>
 
-<?php require_once 'navbar.php'; ?>
+<?php
+require_once 'navbar.php';
+
+?>
+
 
 <body>
 
@@ -20,7 +24,11 @@ require_once 'skills.php';
 require_once 'experiences.php';
 require_once 'formations.php';
 require_once 'interests.php'; 
+<<<<<<< HEAD
 require_once 'form.php';
+=======
+require_once 'form.php'; 
+>>>>>>> 320c95bfd969fafc3934178a54a1ff6182dc6d2b
 
 ?> 
 
