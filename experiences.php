@@ -17,32 +17,53 @@
         <div class="swiper-slide" year="1988">
           <img class="slide-image" src="assets/img/experiences_1.jpg" alt="Image de John MccLane">
           <div class="swiper-slide-content">
-              <span class="timeline-year">1988</span>
-              <h4 class="timeline-title">Nakatomi Plaza</h4>
-              <p class="timeline-text">Die Hard 1</p>
-            </div>
+            <span class="timeline-year">1988</span>
+            <h4 class="timeline-title">Nakatomi Plaza</h4>
+            <p class="timeline-text">Die Hard 1</p>
+          </div>
         </div>
         <div class="swiper-slide" year="1990">
           <img class="slide-image" src="assets/img/experiences_2.jpg" alt="Image de John MccLane">
+          <div class="swiper-slide-content">
+            <span class="timeline-year">1990</span>
+            <h4 class="timeline-title">Aeroport</h4>
+            <p class="timeline-text">Die Hard 2</p>
+          </div>
         </div>
         <div class="swiper-slide" year="1990">
           <img class="slide-image" src="assets/img/experiences_3.jpg" alt="Image de John MccLane">
+          <div class="swiper-slide-content">
+            <span class="timeline-year">1990</span>
+            <h4 class="timeline-title">Aeroport</h4>
+            <p class="timeline-text">Die Hard 2</p>
+        </div>
         </div>
 			  <div class="swiper-slide" year="2007">
           <img class="slide-image" src="assets/img/experiences_4.jpg" alt="Image de John MccLane">
+          <div class="swiper-slide-content">
+            <span class="timeline-year">2007</span>
+            <h4 class="timeline-title">Reseau Informatique</h4>
+            <p class="timeline-text">Die Hard 4</p>
+          </div>
         </div>
+
 			  <div class="swiper-slide" year="2007">
           <img class="slide-image" src="assets/img/experiences_5.jpg" alt="Image de John MccLane">
+          <div class="swiper-slide-content">
+            <span class="timeline-year">2007</span>
+            <h4 class="timeline-title">Reseau Informatique</h4>
+            <p class="timeline-text">Die Hard 4</p>
+          </div>
         </div>
       </div>
       <!-- If we need pagination -->
       <div class="swiper-pagination"></div>
       <!-- If we need navigation buttons -->
-      <div class="btn2">
+
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
-</div>
-    </div>
+
+  </div>
     <!-- partial -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'>
     </script><script  src="assets/experiences_javascript.js"></script>
