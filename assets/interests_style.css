@@ -2,6 +2,11 @@
 section {
     background: rgb(19, 20, 20);
     background: radial-gradient(circle, rgba(19, 20, 20, 1) 0%, rgba(214, 48, 49, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
 }
 
 h2 {
@@ -11,6 +16,7 @@ h2 {
     margin-top: 0;
     letter-spacing: 0.2em;
     margin-bottom: 5px;
+    margin-top: 35px;
 }
 
 h3 {
@@ -25,19 +31,17 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 40px;
+    margin-top: var(--thirdPadding);
+    margin-bottom: var(--thirdPadding);
+    padding: 0;
 }
 
 .container {
-    width: 100%;
     margin-bottom: var(--primaryPadding);
 }
 
 .image {
     width: 100%;
-    height: auto;
-    background-position: center;
-    background-size: contain;
 }
 
 .overlay {
