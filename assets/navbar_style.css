@@ -1,6 +1,6 @@
 @import 'main.css';
 .nav-top {
-    background-color: var(--darkColor);
+    background-color: var(--mainColor);
     padding: var(--thirdPadding);
     display: flex;
     justify-content: space-between;
@@ -103,6 +103,7 @@ h2 {
     height: 100vh;
     top: 0;
     left: 0;
+    transition: ease 0.7s;
 }
 
 .close {

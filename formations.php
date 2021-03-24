@@ -17,18 +17,20 @@
             <input type="radio" name="slider" id="item-1" checked>
             <input type="radio" name="slider" id="item-2">
             <input type="radio" name="slider" id="item-3">
-
+            <input type="radio" name="slider" id="item-4">
             <div class="cards">
                 <label class="card" for="item-1" id="photo-1">
-                    <img src="assets/img/graduation.jpeg" alt="photo">
+                    <img src="assets/img/high_school_graduation.jpg" alt="photo">
                 </label>
                 <label class="card" for="item-2" id="photo-2">
-                    <img src="assets/img/police_squad.jpg" alt="photo">
+                    <img src="assets/img/us_policemen.jpg" alt="photo">
                 </label>
                 <label class="card" for="item-3" id="photo-3">
-                    <img src="assets/img/shooting_range.jpeg" alt="photo">
+                    <img src="assets/img/shooting_range.jpg" alt="photo">
                 </label>
-
+                <label class="card" for="item-4" id="photo-4">
+                    <img src="assets/img/nypd_helicopter.jpg" alt="photo">
+                </label>
             </div>
             <div class="player">
                 <div class="upper-part">
@@ -51,7 +53,12 @@
                                 <div class="subtitle">Mandatory training sessions : twice a year</div>
                             </div>
                         </label>
-
+                        <label class="photo-info" id="photo-info-4">
+                            <div class="title">Helicopter piloting</div>
+                            <div class="sub-line">
+                                <div class="subtitle">License aquired in 1998</div>
+                            </div>
+                        </label>
                     </div>
                 </div>
             </div>
