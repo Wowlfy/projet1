@@ -2,24 +2,15 @@
 <link href="assets/main.css" rel="stylesheet">
 <section id="home" class="home">
 
-    
     <div class="heading">
-    <div class="bg-image"></div>
         <div class="mainHeading">
-        <script src="/assets/home_java.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
-        
-        <h1>JE SUIS
-        <span
-     class="txt-rotate"
-     data-period="2000"
-     data-rotate='[ "Beau.", "Fort.", "John McClane." ]'></span>
-        </h1>
-        <h2><span>Lieutenant</span> de la police de New York.</h2>
+            <div class="titles">
+                <h1>Hello I'm John McClane</h1>
+                <h2>Lieutenant de la Police de New York</h2>
+            </div>
 
-               
-               </div>
-               
+            <a href="#about"><img class="arrow" src="assets/img/arrow.png" alt="fleche"></a>
+        </div>
 
         <div class="bioHeading" id="about">
 
