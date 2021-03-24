@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
-/* @import 'navbar_style.css';
+@import 'navbar_style.css';
 @import 'home_style.css';
 @import 'skills_style.css';
 @import 'experiences_style.css';
 @import 'formations_styles.css';
 @import 'interests_style.css'; 
 @import 'form_style.css';
-@import 'footer_style.css';*/
+@import 'footer_style.css';
+@import 'bio__style.css';
 :root {
   --mainColor: #131414;
   --secondaryColor: #d63031;

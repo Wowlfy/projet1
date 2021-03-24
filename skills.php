@@ -10,9 +10,9 @@
     <script> src=skills_script.js </script>
         </script>
 </head>
-<div class="skills-main">
+<section class="skills-main" id='skills'>
 <h2>SKILLS</h2>
-<section class="skills">
+<div class="skills">
     <script>
 
     </script>
@@ -58,7 +58,7 @@
         </div>
         <div class="gauge__legend">Stamina</div>
     </div>
-</section>
 </div>
+</section>
 
 </html>

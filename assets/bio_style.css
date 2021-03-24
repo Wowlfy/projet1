@@ -53,31 +53,18 @@
 
 .bioHeading {
     display: flex;
-    justify-content: center;
-    background-color: var(--mainColor);
-    height: auto;
-    /*padding: calc(var(--thirdPadding)*2);*/
-    width: 100%;
-    padding: 0px;
     align-items: center;
-}
-
-/* La photo de John McClane */
-
-.photo {
-    display: flex;
-    margin-bottom: var(--thirdPadding);
-    width: 30%;
-    height: auto;
-}
-
-/* La photo de John McClane */
-
-.photo2 {
-    margin-bottom: var(--thirdPadding);
-    width: 150%;
-    height: auto;
-    margin: 0px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(img/bio_background.jpg);
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: cover;
+    width: auto;
+    height:100vh;
+    padding: 0px;
 }
 
 /* Ici c'est la BIographie de John McClane, le flexbox contient 2 elements et ".h3", ".p", ".arrow" */
@@ -86,10 +73,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--lightColor);
-    padding: 0 var(--thirdPadding);
+    color: var(--mainColor);
+    padding: 20px;
     font-size: 100%;
-    width: 70%;
+    width: 60%;
+    height: auto;
+    text-align: justify;
+    border: solid 4px var(--lightColor);
+    opacity: unset;
+    /* background-color: var(--mainColor);  */
 }
 
 .home h3 {
@@ -99,11 +91,15 @@
     text-align: center;
     font-size: 2.5em;
     text-transform: uppercase;
+    color:var(--secondaryColor);
 }
 
 .home p {
     font-family: var(--textFont);
-    font-size: 1.2em;
+    font-size: 1.5em;
+    margin:0;
+    color:var(--lightColor);
+    font-weight:bold;
 }
 
 /* l'image de la fleche */
