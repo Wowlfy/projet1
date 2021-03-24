@@ -1,4 +1,4 @@
-var menu = ['1988', '1990', '1990', '2007', '2007']
+var menu = ['1988', '1990', '1990', '2007', '2007', '2007']
 var mySwiper = new Swiper ('.swiper-container', {
   direction: 'vertical',
     // If we need pagination

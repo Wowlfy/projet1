@@ -54,6 +54,7 @@
 .bioHeading {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     background-color: var(--mainColor);
     height: auto;
     /*padding: calc(var(--thirdPadding)*2);*/
