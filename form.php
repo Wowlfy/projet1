@@ -1,7 +1,7 @@
 
 <section class=form id="form">
         <div class=head>
-            <h2>CONTACT MOI</h2>
+            <h2>CONTACTEZ MOI</h2>
         </div>
 <form action="index.php" method="POST" novalidate>
     <?php if (!empty($errors)) : ?>
