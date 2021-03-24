@@ -20,10 +20,7 @@
     background-repeat:no-repeat;
     background-position:center center;
     background-size: cover;
-    backdrop-filter: blur(2px);
 }
-
-
 
 .skills {
     display: flex;
@@ -55,6 +52,30 @@
     overflow: hidden;
 }
 
+.skills-main:hover  #one {
+    --turnValue:0.250turn;
+}
+
+.skills-main:hover #two {
+    --turnValue:0.125turn;
+}
+    
+.skills-main:hover #three {
+    --turnValue:0.375turn;
+}
+
+.skills-main:hover #four {
+    --turnValue:0.450turn;
+}
+   
+.skills-main:hover #five {
+    --turnValue:0.455turn;
+}
+   
+.skills-main:hover #six {
+    --turnValue:0.445turn;
+}
+
 .gauge__fill {
     position: absolute;
     top: 100%;
@@ -63,119 +84,12 @@
     height: 100%;
     background: var(--secondaryColor);
     transform-origin: center top;
+    transform: rotate(var(--turnValue, 0));
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-delay:5ms;
 }
-
-#one {
-    animation-play-state:running;
-    animation-duration: 4s;
-    animation-name: gaugeFill1;
-    animation-direction:alternate;
-    animation-fill-mode: forwards;
-}
-
-@keyframes gaugeFill1 {
-    from {
-        transform: rotate(0turn);
-    }
-
-    to {
-        transform: rotate(0.250turn);
-    }
-}
-
-
-#two {
-    animation-play-state:running;
-    animation-duration: 4s;
-    animation-name: gaugeFill2;
-    animation-direction:alternate;
-    animation-fill-mode: forwards;
-}
-
-@keyframes gaugeFill2 {
-    from {
-        transform: rotate(0turn);
-    }
-
-    to {
-        transform: rotate(0.125turn);
-    }
-}
-
-#three {
-    animation-play-state:running;
-    animation-duration: 4s;
-    animation-name: gaugeFill3;
-    animation-direction:alternate;
-    animation-fill-mode: forwards;
-}
-
-@keyframes gaugeFill3 {
-    from {
-        transform: rotate(0turn);
-    }
-
-    to {
-        transform: rotate(0.375turn);
-    }
-}
-
-#four {
-    animation-play-state:running;
-    animation-duration: 4s;
-    animation-name: gaugeFill4;
-    animation-direction:alternate;
-    animation-fill-mode: forwards;
-}
-
-@keyframes gaugeFill4 {
-    from {
-        transform: rotate(0turn);
-    }
-
-    to {
-        transform: rotate(0.450turn);
-    }
-}
-
-#five {
-    animation-play-state:running;
-    animation-duration: 4s;
-    animation-name: gaugeFill5;
-    animation-direction:alternate;
-    animation-fill-mode: forwards;
-}
-
-@keyframes gaugeFill5 {
-    from {
-        transform: rotate(0turn);
-    }
-
-    to {
-        transform: rotate(0.455turn);
-    }
-}
-
-
-#six {
-    animation-play-state:running;
-    animation-duration: 4s;
-    animation-name: gaugeFill6;
-    animation-direction:alternate;
-    animation-fill-mode: forwards;
-}
-
-@keyframes gaugeFill6 {
-    from {
-        transform: rotate(0turn);
-    }
-
-    to {
-        transform: rotate(0.445turn);
-    }
-}
-
-
+   
 .gauge__cover {
     width: 75%;
     height: 150%;
