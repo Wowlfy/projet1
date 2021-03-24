@@ -1,0 +1,137 @@
+@import 'main.css';
+
+.home{
+    background-color: var(--mainColor);
+    padding: 0;
+    height: auto;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+/* Contient l'image de New York en arriere plan */
+
+.mainHeading {
+    background-color: var(--mainColor);
+    color: var(--secondaryColor);
+    text-align: center;
+    background-image: url("img/new_york.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* les titres H1 et H2 */
+
+.home h1, h2 {
+    color: var(--secondaryColor);
+    text-align: center;
+    font-family: var(--titleFont);
+    font-weight: bold;
+    position: relative;
+    font-size: 300%;
+    text-transform: uppercase;
+    padding: 50px;
+
+}
+
+.titles {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+/* Ici le flexbox contient 2 elements : ".photo", ".bio_text" */
+
+.bioHeading {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(img/bio_background.jpg);
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: cover;
+    width: auto;
+    height:100vh;
+    padding: 0px;
+}
+
+/* Ici c'est la BIographie de John McClane, le flexbox contient 2 elements et ".h3", ".p", ".arrow" */
+
+.bioText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--mainColor);
+    padding: 20px;
+    font-size: 100%;
+    width: 60%;
+    height: auto;
+    text-align: justify;
+    border: solid 4px var(--lightColor);
+    opacity: unset;
+    /* background-color: var(--mainColor);  */
+}
+
+.home h3 {
+    font-family: var(--titleFont);
+    font-weight: bold;
+    font-size: medium;
+    text-align: center;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color:var(--secondaryColor);
+}
+
+.home p {
+    font-family: var(--textFont);
+    font-size: 1.5em;
+    margin:0;
+    color:var(--lightColor);
+    font-weight:bold;
+}
+
+/* l'image de la fleche */
+
+@keyframes down {
+    0% {
+        position: relative;
+        top: 0px;
+        opacity: 0
+    }
+    50% {
+        position: relative;
+        top: 15px;
+        opacity: 0.5
+    }
+    100% {
+        position: relative;
+        top: 30px;
+        opacity: 1
+    }
+}
+
+.arrow {
+    animation: down 1s infinite linear alternate;
+    align-items: center;
+    width: 3vw;
+    height: 6vh;
+}
+
+@media all and (max-width: 600px) {
+    .bioHeading {
+      display: flex;
+      flex-direction: column;
+    }
+  }
