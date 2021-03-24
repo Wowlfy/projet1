@@ -10,7 +10,7 @@
 
 </head>
 
-<section>
+<section class="interests" id="interests">
 
     <h2>INTERESTS</h2>
     <h3>Some things about me</h3>

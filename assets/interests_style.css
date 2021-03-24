@@ -1,5 +1,5 @@
 @import 'main.css';
-section {
+.interests {
     background: rgb(19, 20, 20);
     background: radial-gradient(circle, rgba(19, 20, 20, 1) 0%, rgba(214, 48, 49, 1) 100%);
     display: flex;
@@ -9,7 +9,7 @@ section {
     padding: 0;
 }
 
-h2 {
+.interests h2 {
     font-family: var(--subTitleFont);
     font-size: 4em;
     color: var(--lightColor);
@@ -19,7 +19,7 @@ h2 {
     margin-top: 35px;
 }
 
-h3 {
+.interests h3 {
     text-align: center;
     margin-top: 0;
     margin-bottom: 10px;
@@ -36,15 +36,15 @@ h3 {
     padding: 0;
 }
 
-.container {
+.interests .container {
     margin-bottom: var(--primaryPadding);
 }
 
-.image {
+.interests .image {
     width: 100%;
 }
 
-.overlay {
+.interests .overlay {
     position: absolute;
     bottom: 100%;
     left: 0;
@@ -57,12 +57,12 @@ h3 {
     opacity: 0.5;
 }
 
-.container:hover .overlay {
+.interests .container:hover .overlay {
     bottom: 0;
     height: 100%;
 }
 
-.text {
+.interests .text {
     white-space: nowrap;
     color: var(--lightColor);
     font-size: 3em;
@@ -75,7 +75,7 @@ h3 {
     -ms-transform: translate(-50%, -50%);
 }
 
-.container p {
+.interests .container p {
     white-space: nowrap;
     color: var(--lightColor);
     font-size: 1.7em;
