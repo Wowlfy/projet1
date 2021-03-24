@@ -9,48 +9,47 @@
 @import 'interests_style.css';
 @import 'form_style.css';
 @import 'footer_style.css';
-<<<<<<< HEAD
-=======
-
->>>>>>> 320c95bfd969fafc3934178a54a1ff6182dc6d2b
 :root {
-  --mainColor: #131414;
-  --secondaryColor: #d63031;
-  --darkColor: #2d3436;
-  --lightColor: #dfe6e9;
-  --titleFont: 'Anton', sans-serif;
-  --subTitleFont: 'Bebas Neue', cursive;
-  --textFont: 'Questrial', sans-serif;
-  --primaryPadding: 8px;
-  --secondaryPadding: calc(var(--primaryPadding) * 2);
-  --thirdPadding: calc(var(--primaryPadding) * 3);
+    --mainColor: #131414;
+    --secondaryColor: #d63031;
+    --darkColor: #2d3436;
+    --lightColor: #dfe6e9;
+    --titleFont: 'Anton', sans-serif;
+    --subTitleFont: 'Bebas Neue', cursive;
+    --textFont: 'Questrial', sans-serif;
+    --primaryPadding: 8px;
+    --secondaryPadding: calc(var(--primaryPadding) * 2);
+    --thirdPadding: calc(var(--primaryPadding) * 3);
 }
 
 html {
-  scroll-behavior: smooth;
-  width: auto;
-  margin: 0;
+    scroll-behavior: smooth;
+    width: auto;
+    margin: 0;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
-
-h1, h2, h3 {
-  text-transform: uppercase;
-  font-style: normal;
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+    font-style: normal;
 }
 
 h1 {
-  font-size: 5em;
+    font-size: 5em;
 }
+
+
 /*
 @media screen and (max-width: 600px) {
   .container {
