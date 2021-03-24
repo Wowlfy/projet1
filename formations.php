@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,8 @@
     <link href="assets/formations_styles.css" rel="stylesheet">
 </head>
 
-<body>
-    
+<section id="formations" class="formations">
+
     <h2>Formations</h2>
     <div class="carousel">
         <div class="container">
@@ -56,5 +57,8 @@
             </div>
         </div>
     </div>
-</body>
+
+</section>
+
+
 </html>

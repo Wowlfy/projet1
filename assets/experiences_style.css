@@ -1,9 +1,12 @@
-@import url(main.css);
+@import 'main.css';
 
 /* Section de la page experiences.php */
 .body_experiences {
   font-family: var(--titleFont);
   font-size: medium;
+  margin: 0;
+  padding: var(--thirdPadding) 0;
+  background-color: var(--mainColor);
 }
 
 /* Le flexbox contient 2 elements ".title_experiences" <-- donc le titre de la page. Et ".timeline" <-- donc le timeline */
@@ -12,9 +15,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: var(--mainColor);
   flex-direction: column;
-  width: 100vw;
+  width: auto;
   height: 100vh;
   justify-content: space-between;
 }
@@ -43,7 +45,7 @@
 .timeline .swiper-container {
   height: 85vh;
   width: 100%;
-  position: relative;
+  position: relative; 
 }
 
 /* c'est l'embalage de images de timelines */

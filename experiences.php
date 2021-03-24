@@ -3,7 +3,7 @@
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800'>
 <link rel="stylesheet" href="assets/experiences_style.css">
 
-<section class="body_experiences">
+<section id="experiences" class="body_experiences">
   <div class="container_experiences">
     <h1 class="title_experiences">Experiences</h1>
     <div class="timeline">

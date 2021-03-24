@@ -24,6 +24,9 @@
             <a href="#home">
                 Home
             </a>
+            <a href="#about">
+                About
+            </a>
             <a href="#skills">
                 Skills
             </a>
@@ -51,6 +54,9 @@
 
     <nav class="nav-left">
         <a href="#home">
+            <i class="fas fa-circle"></i>
+        </a>
+        <a href="#about">
             <i class="fas fa-circle"></i>
         </a>
         <a href="#skills">

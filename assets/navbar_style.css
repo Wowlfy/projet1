@@ -1,13 +1,11 @@
 @import 'main.css';
-
 .nav-top {
-    background-color: var(--darkColor);
+    background-color: var(--mainColor);
     padding: var(--thirdPadding);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 
 .items a {
     color: var(--lightColor);
@@ -56,6 +54,7 @@
     position: fixed;
     padding: var(--secondaryPadding);
     top: 40%;
+    z-index: 2;
 }
 
 .nav-left a {
@@ -104,6 +103,7 @@ h2 {
     height: 100vh;
     top: 0;
     left: 0;
+    transition: ease 0.7s;
 }
 
 .close {
@@ -117,25 +117,27 @@ h2 {
     .nav-left {
         display: none;
     }
-
     section {
-        display: none;
+        display: n one;
     }
-
     .burger {
         display: block;
     }
-
     .items {
         display: none;
     }
-
     .nav-top {
         padding: var(--secondaryPadding);
     }
-
     .close {
         display: block;
     }
-
+    .items a {
+        font-size: 1.4em;
+        padding: 0 var(--primaryPadding);
+    }
+    .all-rights {
+        margin-top: var(--secondaryPadding);
+        font-size: 0.8em;
+    }
 }
