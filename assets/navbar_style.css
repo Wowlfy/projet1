@@ -1,0 +1,143 @@
+@import 'main.css';
+.nav-top {
+    background-color: var(--mainColor);
+    padding: var(--thirdPadding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.items a {
+    color: var(--lightColor);
+    padding: 0 var(--primaryPadding);
+    text-transform: uppercase;
+    font-family: var(--subTitleFont);
+    font-size: 1.6em;
+    transition: all 0.6s ease-out;
+}
+
+.items a:hover {
+    color: var(--secondaryColor);
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-me {
+    font-size: 2em;
+    font-family: var(--titleFont);
+    font-style: italic;
+    color: var(--secondaryColor) !important;
+    transition: all 0.6s ease-out;
+}
+
+.contact-me:hover {
+    color: var(--lightColor) !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo-nav {
+    font-family: var(--subTitleFont);
+    font-size: 2.1em;
+    opacity: 0.9;
+}
+
+.nav-top .logo {
+    color: var(--lightColor);
+}
+
+.nav-top span {
+    color: var(--secondaryColor);
+}
+
+.nav-left {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    padding: var(--secondaryPadding);
+    top: 40%;
+    z-index: 2;
+}
+
+.nav-left a {
+    color: var(--lightColor);
+    padding: var(--primaryPadding) 0;
+    opacity: 0.6;
+    transition: all 0.6s ease-out;
+}
+
+.nav-left a:hover {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+section {
+    padding: calc(var(--thirdPadding) *3);
+}
+
+section p {
+    color: var(--lightColor);
+    font-size: 50px;
+}
+
+h2 {
+    color: var(--lightColor);
+    font-size: 50px;
+    text-align: center;
+}
+
+.burger {
+    font-size: 2em;
+    color: var(--lightColor);
+    display: none;
+}
+
+.items:target {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    font-size: 16pt;
+    background-color: var(--mainColor);
+    opacity: 0.95;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: ease 0.7s;
+}
+
+.close {
+    position: absolute;
+    top: var(--thirdPadding);
+    right: var(--secondaryPadding);
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-left {
+        display: none;
+    }
+    section {
+        display: n one;
+    }
+    .burger {
+        display: block;
+    }
+    .items {
+        display: none;
+    }
+    .nav-top {
+        padding: var(--secondaryPadding);
+    }
+    .close {
+        display: block;
+    }
+    .items a {
+        font-size: 1.4em;
+        padding: 0 var(--primaryPadding);
+    }
+    .all-rights {
+        margin-top: var(--secondaryPadding);
+        font-size: 0.8em;
+    }
+}
