@@ -1,5 +1,7 @@
 <?php
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+    
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data = array_map('trim',$_POST);
     
     $errors = [];
@@ -23,6 +25,13 @@
     }
     if(!filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
          $errors[] = '⚠️ Mauvais format d\'email';
+    }
+    if (empty($data['message'])) {
+        $errors[] = '⚠️ un message est obligatoire';
+    }
+    $lastnameLenght = 20;
+    if (strlen($data['message']) < $lastnameLenght) {
+        $errors[] = '⚠️ Le nom doit faire moins de 20 caractères';
     }
     if(empty($errors)) {
         header('Location: index.php');
@@ -53,18 +62,17 @@ require_once 'navbar.php';
 <?php 
 
 require_once 'home.php';
-require_once 'about.php';
 require_once 'skills.php';
 require_once 'experiences.php';
 require_once 'formations.php';
 require_once 'interests.php'; 
 require_once 'form.php';
 
+
 ?> 
 
 </body>
 
 <?php require_once 'footer.php'; ?>
-
 
 </html>

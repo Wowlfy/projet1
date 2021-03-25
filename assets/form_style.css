@@ -11,7 +11,23 @@ form {
     background-color: var(--darkColor);
 }
 
-label {
+.log {
+    width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-top: 8px;
+    color: var(--lightColor);
+    font-family: var(--textFont);
+}
+
+.message {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
     margin-top: 8px;
     color: var(--lightColor);
     font-family: var(--textFont);
@@ -25,7 +41,7 @@ button {
     padding: 15px;
     width: 200px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 30px;
     font-family: var(--textFont);
 }
 
