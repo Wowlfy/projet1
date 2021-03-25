@@ -12,7 +12,7 @@
 
 <section class="interests" id="interests">
 
-    <h2>INTERESTS</h2>
+    <h2 class="h2-red">INTERESTS</h2>
     <h3>Some things about me</h3>
 
     <div class="interests-main">

@@ -5,6 +5,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 98%;
+    z-index: 5;
 }
 
 .items a {
@@ -46,27 +49,6 @@
 
 .nav-top span {
     color: var(--secondaryColor);
-}
-
-.nav-left {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    padding: var(--secondaryPadding);
-    top: 40%;
-    z-index: 2;
-}
-
-.nav-left a {
-    color: var(--lightColor);
-    padding: var(--primaryPadding) 0;
-    opacity: 0.6;
-    transition: all 0.6s ease-out;
-}
-
-.nav-left a:hover {
-    opacity: 1;
-    transition: all 0.3s ease-in-out;
 }
 
 section {

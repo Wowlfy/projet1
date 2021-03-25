@@ -28,7 +28,7 @@
     flex-direction: column;
     align-items: center;
     color: var(--mainColor);
-    padding: 20px;
+    padding: 40px 50px;
     font-size: 100%;
     width: 60%;
     height: auto;
@@ -36,16 +36,6 @@
     border: solid 4px var(--lightColor);
     opacity: unset;
     /* background-color: var(--mainColor);  */
-}
-
-.bioText h3 {
-    font-family: var(--titleFont);
-    font-weight: bold;
-    font-size: medium;
-    text-align: center;
-    font-size: 2.5em;
-    text-transform: uppercase;
-    color:var(--secondaryColor);
 }
 
 .bioText p {

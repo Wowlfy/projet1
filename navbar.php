@@ -52,30 +52,6 @@
         </a>
     </nav>
 
-    <nav class="nav-left">
-        <a href="#home">
-            <i class="fas fa-circle"></i>
-        </a>
-        <a href="#about">
-            <i class="fas fa-circle"></i>
-        </a>
-        <a href="#skills">
-            <i class="fas fa-circle"></i>
-        </a>
-        <a href="#experiences">
-            <i class="fas fa-circle"></i>
-        </a>
-        <a href="#formations">
-            <i class="fas fa-circle"></i>
-        </a>
-        <a href="#interests">
-            <i class="fas fa-circle"></i>
-        </a>
-        <a href="#form">
-            <i class="fas fa-circle"></i>
-        </a>
-    </nav>
-
 </header>
 
 </html>

@@ -11,7 +11,7 @@
 
 <section id="formations" class="formations">
 
-    <h2>Formations</h2>
+    <h2 class="h2-white">Formations</h2>
     <div class="carousel">
         <div class="container">
             <input type="radio" name="slider" id="item-1" checked>

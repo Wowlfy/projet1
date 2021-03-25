@@ -21,10 +21,7 @@
                 <span class="txt-rotate" data-period="2000" data-rotate='[ "Beau.", "Fort.", "John McClane." ]'></span>
             </h1>
             <h2><span>Lieutenant</span> de la police de New York.</h2>
-
-
         </div>
-
     </div>
 </section>
 

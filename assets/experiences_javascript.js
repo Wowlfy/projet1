@@ -1,6 +1,7 @@
-var menu = ['1988', '1990', '1990', '2007', '2007']
+var menu = ['1988', '1990', '1990', '2007', '2007', '2007']
 var mySwiper = new Swiper ('.swiper-container', {
   direction: 'vertical',
+  speed: 600,
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',

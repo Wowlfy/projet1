@@ -1,44 +1,78 @@
 @import 'main.css';
-
-.skills-main h2 {
-    font-family: var(--titleFont);
-    text-align: center;
-    color: var(--secondaryColor);
-    font-size: 50px;
-    margin: 0;
-}
-
 .skills-main {
     margin: 0;
     padding: 0;
-    width:auto;
+    width: auto;
     height: 100vh;
-    background: rgb(45,52,54);
-    background: linear-gradient(214deg, rgba(45,52,54,1) 0%, rgba(214,48,49,1) 50%, rgba(19,20,20,1) 100%); 
+    background: rgb(45, 52, 54);
+    background: linear-gradient(214deg, rgba(45, 52, 54, 1) 0%, rgba(214, 48, 49, 1) 50%, rgba(19, 20, 20, 1) 100%);
     background-image: url(img/skills_background.jpg);
-    background-attachment:fixed;
-    background-repeat:no-repeat;
-    background-position:center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-global {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    width: 60%;
+    padding: 0 50px 40px 50px;
+}
+
+.skills-main h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 .skills {
     display: flex;
+    flex-direction: column;
+}
+
+.top-cards, .bot-cards {
+    display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: stretch ;
+    justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
+    margin: 20px 0 40px 0;
 }
 
 .gauge {
     width: 60%;
+    height: 20vh;
     max-width: 200px;
-    font-family: var(--textFont);
-    font-size: 25px;
-    background-color: var(--darkColor);
-    border-radius: 8px;
     margin: var(--thirdPadding) 0;
-    padding:8px;
+    margin: 0 30px;
+}
+
+.gauge-main {
+    background-color: var(--mainColor);
+    margin-bottom: 5px;
+    padding: 35px 24px;
+    border-radius: 8px;
+}
+
+.gauge-text {
+    background-color: var(--mainColor);
+    border-radius: 8px;
+}
+
+.gauge-text p {
+    color: var(--secondaryColor);
+    font-family: var(--subTitleFont);
+    margin: 0;
+    text-align: center;
+    font-size: 1.7em;
+    letter-spacing: 0.1em;
+    padding: 15px;
+    margin: 0;
 }
 
 .gauge__body {
@@ -52,28 +86,28 @@
     overflow: hidden;
 }
 
-.skills-main:hover  #one {
-    --turnValue:0.250turn;
+.skills-main:hover #one {
+    --turnValue: 0.250turn;
 }
 
 .skills-main:hover #two {
-    --turnValue:0.125turn;
+    --turnValue: 0.125turn;
 }
-    
+
 .skills-main:hover #three {
-    --turnValue:0.375turn;
+    --turnValue: 0.375turn;
 }
 
 .skills-main:hover #four {
-    --turnValue:0.450turn;
+    --turnValue: 0.450turn;
 }
-   
+
 .skills-main:hover #five {
-    --turnValue:0.455turn;
+    --turnValue: 0.455turn;
 }
-   
+
 .skills-main:hover #six {
-    --turnValue:0.445turn;
+    --turnValue: 0.445turn;
 }
 
 .gauge__fill {
@@ -87,13 +121,13 @@
     transform: rotate(var(--turnValue, 0));
     transition-property: transform;
     transition-duration: 2s;
-    transition-delay:5ms;
+    transition-delay: 5ms;
 }
-   
+
 .gauge__cover {
     width: 75%;
     height: 150%;
-    background-color: var(--darkColor);
+    background-color: var(--mainColor);
     border-radius: 50%;
     position: absolute;
     top: 25%;
@@ -103,17 +137,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.6em;
+    font-family: var(--subTitleFont);
     padding-bottom: 25%;
     box-sizing: border-box;
-    color: var(--lightColor);
-}
-
-.gauge__legend {
-    clear: both;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 10%;
-    box-sizing: border-box;
-    color: var(--lightColor);
+    color: var(--secondaryColor);
 }
