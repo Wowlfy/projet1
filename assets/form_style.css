@@ -100,6 +100,7 @@ button {
     font-family: var(--subTitleFont);
     box-shadow: var(--mainColor);
     transition: ease 0.7s;
+    cursor: pointer;
 }
 
 button:hover {
@@ -116,36 +117,19 @@ button:active {
 
 .error {
     background-color: var(--lightColor);
-    color: var(--secondaryColor);
     padding: 8px;
     border-radius: 4px;
-    margin: 8px;
+    margin: auto;
     list-style: none;
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-@media screen and (max-width: 800px) {
-    button {
-        background-color: var(--darkColor);
-        color: var(--lightColor);
-        border-color: var(--secondaryColor);
-        border-radius: 4px;
-        padding: 15px;
-        width: 150px;
-        margin: auto;
-        margin-top: 50px;
-        font-family: var(--textFont);
-    }
-    button:hover {
-        filter: brightness(130%);
-    }
-    button:active {
-        filter: brightness(70%);
-    }
-    form {
-        width: 200px;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        padding: 25px;
-    }
+.error li {
+    color: var(--secondaryColor);
+    font-family: var(--subTitleFont);
+    margin: 5px;
+    font-size: 1.1em;
 }

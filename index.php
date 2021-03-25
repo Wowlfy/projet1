@@ -6,31 +6,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $errors = [];
 
     if (empty($data['firstname'])) {
-        $errors[] = '⚠️ Le prénom est obligatoire';
+        $errors[] = '⚠️   Le prénom est obligatoire';
     }
     $firstnameLenght = 20;
     if (strlen($data['firstname']) > $firstnameLenght) {
-        $errors[] = '⚠️ Le prénom doit faire moins de 20 caractères';
+        $errors[] = '⚠️   Le prénom doit faire moins de 20 caractères';
     }
     if (empty($data['lastname'])) {
-        $errors[] = '⚠️ Le nom est obligatoire';
+        $errors[] = '⚠️   Le nom est obligatoire';
     }
     $lastnameLenght = 20;
     if (strlen($data['lastname']) > $lastnameLenght) {
-        $errors[] = '⚠️ Le nom doit faire moins de 20 caractères';
+        $errors[] = '⚠️   Le nom doit faire moins de 20 caractères';
     }
     if (empty($data['email'])) {
-        $errors[] = '⚠️ L\'Email est obligatoire';
+        $errors[] = '⚠️   L\'Email est obligatoire';
     }
     if (!filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
-        $errors[] = '⚠️ Mauvais format d\'email';
+        $errors[] = '⚠️   Mauvais format d\'email';
     }
     if (empty($data['message'])) {
-        $errors[] = '⚠️ un message est obligatoire';
+        $errors[] = '⚠️   Un message est obligatoire';
     }
     $lastnameLenght = 20;
     if (strlen($data['message']) < $lastnameLenght) {
-        $errors[] = '⚠️ Le nom doit faire moins de 20 caractères';
+        $errors[] = '⚠️   Le nom doit faire moins de 20 caractères';
     }
     if (empty($errors)) {
         header('Location: index.php');
