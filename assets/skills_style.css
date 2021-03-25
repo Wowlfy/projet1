@@ -65,7 +65,7 @@
 }
 
 .gauge-text p {
-    color: var(--secondaryColor);
+    color: var(--lightColor);
     font-family: var(--subTitleFont);
     margin: 0;
     text-align: center;
@@ -141,5 +141,5 @@
     font-family: var(--subTitleFont);
     padding-bottom: 25%;
     box-sizing: border-box;
-    color: var(--secondaryColor);
+    color: var(--lightColor);
 }
