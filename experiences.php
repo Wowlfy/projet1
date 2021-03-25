@@ -36,22 +36,21 @@
             <span class="timeline-year">1990</span>
             <h4 class="timeline-title">Aeroport</h4>
             <p class="timeline-text">Die Hard 2</p>
+          </div>
         </div>
-        </div>
-			  <div class="swiper-slide" year="2007">
-          <img class="slide-image" src="assets/img/experiences_4.jpg" alt="Image de John MccLane">
+        <div class="swiper-slide" year="2007">
+          <img class="slide-image" src="assets/img/experiences_3.jpg" alt="Image de John MccLane">
           <div class="swiper-slide-content">
             <span class="timeline-year">2007</span>
-            <h4 class="timeline-title">Reseau Informatique</h4>
+            <h4 class="timeline-title">Reseau Info</h4>
             <p class="timeline-text">Die Hard 4</p>
           </div>
         </div>
-
 			  <div class="swiper-slide" year="2007">
           <img class="slide-image" src="assets/img/experiences_5.jpg" alt="Image de John MccLane">
           <div class="swiper-slide-content">
             <span class="timeline-year">2007</span>
-            <h4 class="timeline-title">Reseau Informatique</h4>
+            <h4 class="timeline-title">Reseau Info</h4>
             <p class="timeline-text">Die Hard 4</p>
           </div>
         </div>
@@ -59,19 +58,19 @@
           <img class="slide-image" src="assets/img/experiences_5.jpg" alt="Image de John MccLane">
           <div class="swiper-slide-content">
             <span class="timeline-year">2007</span>
-            <h4 class="timeline-title">Reseau Informatique</h4>
+            <h4 class="timeline-title">Reseau Info</h4>
             <p class="timeline-text">Die Hard 4</p>
           </div>
         </div>
       </div>
 
-
+      <div class="btn4">
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
-
         <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
+      </div>
 
 
   </div>

@@ -2,16 +2,10 @@
 
 /* la section body */
 .experience_body {
-  position: relative;
   background: var(--mainColor);
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
   width: 100vw;
   height: 100vh;
-  margin: auto;
+  padding: 0;
   display: flex;
   flex-direction: column;
 }
@@ -22,7 +16,8 @@
   color: var(--lightColor);
   font-style: italic;
   font-weight: 800;
-  justify-content: space-around;
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
 
@@ -30,25 +25,25 @@
 .swiper-container {
   height: 85vh;
   width: 100vw;
-
   display: flex;
-  justify-content: center;
-  align-items: center;
+}
 
+ /* c'est l'embalage de images de timelines */
+ .swiper-wrapper {
+  display: flex;
 }
 
 /* le slide */
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background:BLACK;
-  /* Center slide text vertically */
   display: flex;
-  /*justify-content: center;*/
-  align-items: center;
   width: 100vw;
   height: 100vh;
   background-size: cover;
+  background:var(--mainColor);
+  text-align: center;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Images */
@@ -61,9 +56,7 @@
 .swiper-pagination {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   justify-content: center;
-  width: auto !important;
   font-weight: 300;
   font-size: 25px;
   z-index: 1; 
@@ -72,80 +65,85 @@
 
 /* les dates  */
 .swiper-pagination-bullet {
+  display: flex;
   width: auto;
   height: auto;
-  text-align: center;
   opacity: 1;
   background: transparent;
   color: var(--darkColor);
-  left:-305%;
-  position: relative;
   font-weight: 1000;
   font-style: italic;
+  justify-content: flex-start;
+  position: relative;
+  margin-left: -353px;
 }
 
 
 /* Le timeline la boule sur la barre */
 .swiper-pagination-bullet::before {
+  display: flex;
   content: ""; /* contien quelquechose :before ou :after l'element */
-  position: absolute;
-  top: 8px;
-  left: -100%;
   width: 15px;
   height: 15px;
   border-radius: 100%;
   background-color: var(--darkColor);
   transform: scale(1); /* transforme --> 0 = cacher et 1 = afficher */
   transition: 0.2s;
+  justify-content: center;
+  position: absolute;
+  margin-left: -50px;
 }
 
 
 /* la barre pour le timeline */
 .swiper-pagination::before {
+  display: flex;
+  justify-content: center;
   content: "";
-  position: absolute;
-  left: -400%;
   height: 100vh;
   width: 7px;
   background-color: var(--mainColor);
   opacity: 0.4;
+  position: absolute;
+  margin-left: -400px;
 }
 
 
 /* Le timeline la dates sur la barre encours */
 .swiper-pagination-bullet-active {
+  display: flex;
   color: var(--secondaryColor);
 }
 
 
 /* Le timeline la boule sur la barre encours */
 .swiper-pagination-bullet-active::before {
+  display: flex;
   transform: scale(1); /* transforme --> 0 = cacher et 1 = afficher */
   background-color: var(--secondaryColor);
 }
 
 
-
 /* Les fleche haut et bas */
 .swiper-button-next,
 .swiper-button-prev {
+  display: flex;
   background-size: 40px 40px;
   width: 40px;
-  margin-top: 0;
-  z-index: 2;
+  z-index: 1;
   transition: 0.2s;
-
 }
 
 
 
 /* La fleche pointant vers la gauche/haut */
 .swiper-button-prev {
-  left:82.5%;
+  left:81.5%;
   top:15%;
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/05/Red_Arrow_Left.png");
   transform: rotate(0.25turn);
 }
+
 .swiper-button-prev:hover {
   transform: rotate(0.25turn);
 }
@@ -153,8 +151,8 @@
 
 /* La fleche pointant vers la droite/bas */
 .swiper-button-next {
-  left: 82.5%;
-  top: 75%;
+  left: 81.5%;
+  top: 85%;
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Red_Arrow_Right.svg/600px-Red_Arrow_Right.svg.png");
   transform: rotate(0.25turn);
 }
@@ -163,15 +161,11 @@
 }
 
 
- /* c'est l'embalage de images de timelines */
-.swiper-wrapper {
-  transition: 2s cubic-bezier(0.68, -0.4, 0.27, 1.34) 0.2s; *//* transition entre 2 images de slide */
-}
 
-.btn {
+
+.btn4 {
   display: flex;
-  /*flex-direction: column;*/
-  width: 30%;
+  align-items: center;
 
 }
 
@@ -181,17 +175,12 @@
 .swiper-slide-content {
   display: flex;
   flex-direction: column;
-  position: absolute;
- 
   align-items: flex-end;
-
-  width: 80%;
+  position: absolute;
+  width: 100%;
   max-width: 310px;
-
-
   transform: translate(50%, 0);
   font-size: 12px;
-  z-index: 2;
 }
 
 
@@ -204,12 +193,8 @@
   font-weight: 300;
   opacity: 0;
   transition: 0.2s ease 0.4s;
-  display: block;
   margin-bottom: 50px;
   transform: translate3d(20px, 0, 0);
-  margin: auto;
-  display: flex;
-  justify-content: flex-end;
   margin: 0;
 }
 
@@ -221,7 +206,7 @@
   transition: 0.2s ease 0.5s;
   margin: 0;
   transform: translate3d(20px, 0, 0);
-  color: aliceblue;
+  color: var(--lightColor);
 }
 
 /* Les textes dans le slide */
@@ -231,6 +216,7 @@
   line-height: 1.5;
   transform: translate3d(20px, 0, 0);
   margin: 0;
+  color: var(--lightColor);
 }
 
 
