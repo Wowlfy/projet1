@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
     $lastnameLenght = 20;
     if (strlen($data['message']) < $lastnameLenght) {
-        $errors[] = '⚠️   Le nom doit faire moins de 20 caractères';
+        $errors[] = '⚠️   Le message doit faire au moins 20 caractères';
     }
     if (empty($errors)) {
         header('Location: index.php');
