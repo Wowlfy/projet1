@@ -53,16 +53,12 @@ require_once 'navbar.php';
 <?php 
 
 require_once 'home.php';
+require_once 'about.php';
 require_once 'skills.php';
 require_once 'experiences.php';
 require_once 'formations.php';
 require_once 'interests.php'; 
-<<<<<<< HEAD
 require_once 'form.php';
-=======
-require_once 'form.php'; 
-
->>>>>>> e5397f09daa470a826be830a02ab7bab2e4c2a82
 
 ?> 
 
