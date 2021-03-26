@@ -1,36 +1,115 @@
 @import 'main.css';
+.form {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--secondaryColor);
+    padding: 0;
+}
+
+.form h2 {
+    margin-top: 100px;
+}
+
+.form h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--lightColor);
+    font-family: var(--textFont);
+}
+
 form {
-    width: 300px;
     margin: auto;
     display: flex;
     flex-direction: column;
-    padding: 25px;
+    width: 100%;
+    margin-top: 0;
+    padding-bottom: 100px;
 }
 
-.form {
-    background-color: var(--darkColor);
+.log {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    width: 55%;
 }
 
-label {
-    margin-top: 8px;
+.log label {
+    margin-top: 20px;
+    font-size: 2em;
     color: var(--lightColor);
-    font-family: var(--textFont);
+    font-family: var(--subTitleFont);
+}
+
+.log input {
+    height: 40px;
+    margin-top: 5px;
+    background-color: var(--mainColor);
+    border: none;
+    color: var(--lightColor);
+    font-family: var(--subTitleFont);
+    font-size: 1.5em;
+    padding: 8px;
+}
+
+.message {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    width: 55%;
+}
+
+.message label {
+    margin-top: 20px;
+    font-size: 2em;
+    color: var(--lightColor);
+    font-family: var(--subTitleFont);
+}
+
+.message textarea {
+    height: 120px;
+    margin-top: 5px;
+    background-color: var(--mainColor);
+    border: none;
+    color: var(--lightColor);
+    font-family: var(--subTitleFont);
+    font-size: 1.5em;
+    padding: 8px;
+}
+
+input::placeholder {
+    color: var(--lightColor);
+    opacity: 0.5;
 }
 
 button {
-    background-color: var(--darkColor);
-    color: var(--lightColor);
-    border-color: var(--secondaryColor);
+    background-color: var(--lightColor);
+    color: var(--mainColor);
+    border-color: var(--mainColor);
+    font-size: 2em;
+    border: 3px solid var(--mainColor);
     border-radius: 4px;
-    padding: 15px;
-    width: 200px;
+    padding: 25px;
     margin: auto;
-    margin-top: 50px;
-    font-family: var(--textFont);
+    margin-top: 40px;
+    width: 20%;
+    font-family: var(--subTitleFont);
+    box-shadow: var(--mainColor);
+    transition: ease 0.7s;
+    cursor: pointer;
 }
 
 button:hover {
-    filter: brightness(130%);
+    background-color: var(--secondaryColor);
+    color: var(--lightColor);
+    border-color: var(--lightColor);
+    border: 3px solid var(--lightColor);
+    transition: ease 0.7s;
 }
 
 button:active {
@@ -39,36 +118,43 @@ button:active {
 
 .error {
     background-color: var(--lightColor);
-    color: var(--secondaryColor);
     padding: 8px;
     border-radius: 4px;
-    margin: 8px;
+    margin: auto;
     list-style: none;
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-@media screen and (max-width: 800px) {
+.error li {
+    color: var(--secondaryColor);
+    font-family: var(--subTitleFont);
+    margin: 5px;
+    font-size: 1.1em;
+}
+
+@media screen and (max-width: 600px) {
+    .form h2 {
+        font-size: 3.2em;
+        margin-top: 110px;
+    }
+    .log label {
+        font-size: 1.5em;
+    }
+    .message label {
+        font-size: 1.5em;
+    }
+    .log {
+        width: 80%;
+    }
+    .message {
+        width: 80%;
+    }
     button {
-        background-color: var(--darkColor);
-        color: var(--lightColor);
-        border-color: var(--secondaryColor);
-        border-radius: 4px;
-        padding: 15px;
-        width: 150px;
-        margin: auto;
-        margin-top: 50px;
-        font-family: var(--textFont);
-    }
-    button:hover {
-        filter: brightness(130%);
-    }
-    button:active {
-        filter: brightness(70%);
-    }
-    form {
-        width: 200px;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        padding: 25px;
+        width: 80%;
+        margin-top: 20px;
+        padding: 18px;
     }
 }

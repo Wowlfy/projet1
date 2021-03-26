@@ -1,5 +1,4 @@
 @import 'main.css';
-
 footer {
     background-color: var(--mainColor);
     padding: calc(var(--secondaryPadding) *2);
@@ -9,13 +8,13 @@ footer {
     justify-content: center;
 }
 
-.items {
+.items-f {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.items a {
+.items-f a {
     color: var(--lightColor);
     font-size: 1.7em;
     text-transform: uppercase;
@@ -24,7 +23,7 @@ footer {
     transition: all 0.6s ease-out;
 }
 
-.items a:hover {
+.items-f a:hover {
     color: var(--secondaryColor);
     transition: all 0.3s ease-in-out;
 }
@@ -36,4 +35,15 @@ footer {
     text-align: center;
     margin-bottom: 0;
     margin-top: calc(var(--secondaryPadding) *2);
+}
+
+@media screen and (max-width: 600px) {
+    .all-rights {
+        margin-top: var(--secondaryPadding);
+        font-size: 0.8em;
+    }
+
+    .items-f a {
+        font-size: 1.3em;
+    }
 }
