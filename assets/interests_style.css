@@ -86,3 +86,31 @@
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
+
+@media screen and (max-width: 600px) {
+    .interests-main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .interests h2 {
+        font-size: 3.2em;
+        margin-bottom: 10px;
+    }
+    .interests-main {
+        height: 600px;
+        margin-top: 70px;
+    }
+    .interests .container {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .interests img {
+        width: 100%;
+    }
+    .text {
+        font-size: 1.8em;
+    }
+    .interests .container p {
+        font-size: 0.9em;
+    }
+}

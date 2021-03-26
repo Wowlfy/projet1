@@ -1,24 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills</title>
-    <link rel="Stylesheet" href="assets/skills_style.css">
-</head>
-
 <section class="skills-main" id='skills'>
 
     <div class="skills-global">
-
         <h2 class="h2-white">SKILLS</h2>
-
         <div class="skills">
-
             <div class="top-cards">
-
                 <div class='gauge'>
                     <div class="gauge-main">
                         <div class="gauge__body">
@@ -96,13 +81,8 @@
                         <p>Stamina</p>
                     </div>
                 </div>
-
             </div>
-
         </div>
-
     </div>
 
 </section>
-
-</html>

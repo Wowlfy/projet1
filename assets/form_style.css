@@ -1,14 +1,16 @@
 @import 'main.css';
 .form {
     height: 100vh;
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: var(--secondaryColor);
+    padding: 0;
 }
 
 .form h2 {
-    margin-top: 40px;
+    margin-top: 100px;
 }
 
 .form h3 {
@@ -23,9 +25,9 @@ form {
     margin: auto;
     display: flex;
     flex-direction: column;
-    padding: 25px;
     width: 100%;
     margin-top: 0;
+    padding-bottom: 100px;
 }
 
 .log {
@@ -60,7 +62,6 @@ form {
     flex-direction: column;
     text-transform: uppercase;
     width: 55%;
-    max-width: 55%;
 }
 
 .message label {
@@ -132,4 +133,28 @@ button:active {
     font-family: var(--subTitleFont);
     margin: 5px;
     font-size: 1.1em;
+}
+
+@media screen and (max-width: 600px) {
+    .form h2 {
+        font-size: 3.2em;
+        margin-top: 110px;
+    }
+    .log label {
+        font-size: 1.5em;
+    }
+    .message label {
+        font-size: 1.5em;
+    }
+    .log {
+        width: 80%;
+    }
+    .message {
+        width: 80%;
+    }
+    button {
+        width: 80%;
+        margin-top: 20px;
+        padding: 18px;
+    }
 }

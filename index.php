@@ -46,8 +46,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" href="assets/main.css">
-    <link rel="stylesheet" href="assets/navbar_style.css">
-    <link rel="stylesheet" href="assets/form_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800'>
+    <script src="https://kit.fontawesome.com/661d52523c.js" crossorigin="anonymous"></script>
     <title>John McClane</title>
 </head>
 

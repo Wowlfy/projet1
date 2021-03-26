@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="assets/formations_styles.css" rel="stylesheet">
-</head>
-
 <section id="formations" class="formations">
 
     <h2 class="h2-white">Formations</h2>
@@ -20,16 +9,16 @@
             <input type="radio" name="slider" id="item-4">
             <div class="cards">
                 <label class="card" for="item-1" id="photo-1">
-                    <img src="assets/img/high_school_graduation.jpg" alt="photo">
+                    <img src="assets/img/high_school_graduation.jpg" alt="Graduation School">
                 </label>
                 <label class="card" for="item-2" id="photo-2">
-                    <img src="assets/img/us_policemen.jpg" alt="photo">
+                    <img src="assets/img/us_policemen.jpg" alt="US Policemen">
                 </label>
                 <label class="card" for="item-3" id="photo-3">
-                    <img src="assets/img/shooting_range.jpg" alt="photo">
+                    <img src="assets/img/shooting_range.jpg" alt="Shooting Range">
                 </label>
                 <label class="card" for="item-4" id="photo-4">
-                    <img src="assets/img/nypd_helicopter.jpg" alt="photo">
+                    <img src="assets/img/nypd_helicopter.jpg" alt="NYPD Helicopter">
                 </label>
             </div>
             <div class="player">
@@ -38,7 +27,7 @@
                         <label class="photo-info" id="photo-info-1">
                             <div class="title">High school</div>
                             <div class="sub-line">
-                                <div class="subtitle">Graduation in 1973 - Plainfield High School, NJ</div>
+                                <div class="subtitle">Graduation in 1973</div>
                             </div>
                         </label>
                         <label class="photo-info" id="photo-info-2">
@@ -66,6 +55,3 @@
     </div>
 
 </section>
-
-
-</html>

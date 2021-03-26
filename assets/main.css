@@ -9,7 +9,7 @@
 @import 'interests_style.css';
 @import 'form_style.css';
 @import 'footer_style.css';
-@import 'about__style.css';
+@import 'about_style.css';
 :root {
   --mainColor: #131414;
   --secondaryColor: #d63031;
@@ -61,27 +61,4 @@ a {
   margin-bottom: 15px;
   margin-top: 30px;
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
-}
-
-@media screen and (max-width: 600px) {
-  .burger {
-    display: block;
-  }
-  .items {
-    display: none;
-  }
-  .nav-top {
-    padding: var(--secondaryPadding);
-  }
-  .close {
-    display: block;
-  }
-  .items a {
-    font-size: 1.4em;
-    padding: 0 var(--primaryPadding);
-  }
-  .all-rights {
-    margin-top: var(--secondaryPadding);
-    font-size: 0.8em;
-  }
 }

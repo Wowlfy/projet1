@@ -1,11 +1,6 @@
 @import 'main.css';
-
-body {
-    background: rgb(19, 20, 20);
-    background: radial-gradient(circle, rgba(19, 20, 20, 1) 0%, rgba(214, 48, 49, 1) 100%);
-}
-
 .formations {
+    background-color: var(--secondaryColor);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +10,6 @@ body {
     width: auto;
     height: 100vh;
     padding: var(--primaryPadding);
-    margin-bottom: var(--secondaryPadding); 
 }
 
 .formations h2 {
@@ -77,25 +71,25 @@ input[type=radio] {
     object-fit: cover;
 }
 
-#item-1:checked ~ .cards #photo-4, #item-2:checked ~ .cards #photo-1, #item-3:checked ~ .cards #photo-2, #item-4:checked ~ .cards #photo-3 {
+#item-1:checked~.cards #photo-4, #item-2:checked~.cards #photo-1, #item-3:checked~.cards #photo-2, #item-4:checked~.cards #photo-3 {
     transform: translatex(-40%) scale(.8);
     opacity: .4;
     z-index: 0;
 }
 
-#item-1:checked ~ .cards #photo-3, #item-2:checked ~ .cards #photo-4, #item-3:checked ~ .cards #photo-1, #item-4:checked ~ .cards #photo-2 {
+#item-1:checked~.cards #photo-3, #item-2:checked~.cards #photo-4, #item-3:checked~.cards #photo-1, #item-4:checked~.cards #photo-2 {
     transform: translatex(0%) scale(.8);
     opacity: .4;
     z-index: 0;
 }
 
-#item-1:checked ~ .cards #photo-2, #item-2:checked ~ .cards #photo-3, #item-3:checked ~ .cards #photo-4, #item-4:checked ~ .cards #photo-1 {
+#item-1:checked~.cards #photo-2, #item-2:checked~.cards #photo-3, #item-3:checked~.cards #photo-4, #item-4:checked~.cards #photo-1 {
     transform: translatex(40%) scale(.8);
     opacity: .4;
     z-index: 0;
 }
 
-#item-1:checked ~ .cards #photo-1, #item-2:checked ~ .cards #photo-2, #item-3:checked ~ .cards #photo-3, #item-4:checked ~ .cards #photo-4 {
+#item-1:checked~.cards #photo-1, #item-2:checked~.cards #photo-2, #item-3:checked~.cards #photo-3, #item-4:checked~.cards #photo-4 {
     transform: translatex(0) scale(1);
     opacity: 1;
     z-index: 1;
@@ -103,8 +97,8 @@ input[type=radio] {
 
 .player {
     /*background-color: var(--darkColor);*/
-    background: rgb(19,20,20);
-    background: radial-gradient(circle, rgba(19,20,20,1) 0%, rgba(40,40,40,1) 100%);
+    background: rgb(19, 20, 20);
+    background: radial-gradient(circle, rgba(19, 20, 20, 1) 0%, rgba(40, 40, 40, 1) 100%);
     border-radius: 8px;
     padding: auto;
     padding: 30px 20px;
@@ -146,7 +140,8 @@ input[type=radio] {
 
 .subtitle {
     font: var(-textFont);
-    font-size: 100%; /*Mettre 13px pour le media query!!*/
+    font-size: 100%;
+    /*Mettre 13px pour le media query!!*/
     line-height: 16px;
     color: var(--lightColor);
 }
@@ -163,18 +158,39 @@ input[type=radio] {
     transition: transform .4s ease-in;
 }
 
-#item-1:checked ~ .player #test {
+#item-1:checked~.player #test {
     transform: translateY(0);
 }
 
-#item-2:checked ~ .player #test  {
+#item-2:checked~.player #test {
     transform: translateY(-25%);
 }
 
-#item-3:checked ~ .player #test  {
+#item-3:checked~.player #test {
     transform: translateY(-50%);
 }
 
-#item-4:checked ~ .player #test  {
+#item-4:checked~.player #test {
     transform: translateY(-75%);
+}
+
+@media screen and (max-width: 600px) {
+    .formations h2 {
+        font-size: 3.2em;
+        margin: 40px 0 30px 0;
+    }
+    .info-area {
+        left: 0;
+        top: -10%;
+    }
+    .player {
+        min-width: none;
+        width: 300px;
+    }
+    .upper-part {
+        width: 100%;
+    }
+    .photo-info {
+        width: 100%;
+    }
 }

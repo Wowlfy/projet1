@@ -1,7 +1,6 @@
 @import 'main.css';
-
 .about {
-    padding:0;
+    padding: 0;
 }
 
 .bioHeading {
@@ -11,15 +10,14 @@
     flex-wrap: wrap;
     justify-content: center;
     background-image: url(img/bio_background.jpg);
-    background-attachment:fixed;
-    background-repeat:no-repeat;
-    background-position:center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
     width: auto;
-    height:100vh;
+    height: 100vh;
     padding: 0px;
 }
-
 
 /* Ici c'est la BIographie de John McClane, le flexbox contient 2 elements et ".h3", ".p", ".arrow" */
 
@@ -32,7 +30,6 @@
     font-size: 100%;
     width: 60%;
     height: auto;
-    text-align: justify;
     border: solid 4px var(--lightColor);
     opacity: unset;
     /* background-color: var(--mainColor);  */
@@ -41,8 +38,36 @@
 .bioText p {
     font-family: var(--textFont);
     font-size: 1.5em;
-    margin:0;
-    color:var(--lightColor);
-    font-weight:bold;
+    margin: 0;
+    color: var(--lightColor);
+    font-weight: bold;
 }
 
+.bioText p span {
+    color: var(--secondaryColor);
+    font-family: var(--subTitleFont);
+    font-size: 1.6em;
+    margin-top: 10px;
+    text-shadow: var(--mainColor);
+}
+
+@media screen and (max-width: 600px) {
+    .bioHeading {
+        background-attachment: local;
+    }
+    .bioText {
+        height: auto;
+        padding: 20px;
+    }
+    .bioText p {
+        height: 100%;
+        font-size: 1.1em;
+        margin-bottom: 10px;
+        line-height: 1.5em;
+    }
+    .bioText h2 {
+        font-size: 3.2em;
+        margin: 15px 0 15px 0;
+        line-height: 1em;
+    }
+}

@@ -1,27 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+<section id="about" class="about">
+    <div class="bioHeading" id="about">
+        <div class="bioText">
+            <h2 class="h2-red" id="aboutMe">ABout Me</h2>
+            <p>
+                My name is John McClane, Sr. I was born March 19, 1955 in Plainfield, New Jersey, USA. My father was an Irish-American policeman while her mother was a housekeeper. During my youth, I sadly lost my father and when I became an adult and my mother also lost her life. As I then moved to New York City where I joined the local police. I very quickly met with some success and I therefore earned to be promoted to the rank of lieutenant by my captain. </br> I am always in the bad place at the bad time but I can handle it. <span>Yippie kay yay !</span>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/about_style.css" rel="stylesheet">
-    <section id="about" class="about">
-        <title>Document</title>
-</head>
-
-<div class="bioHeading" id="about">
-    <div class="bioText">
-        <h2 class="h2-red" id="aboutMe">ABout Me</h2>
-        <p>
-            John McClane, Sr. est né le 19 mars 1955 à Plainfield, au New Jersey, au
-            x Etats-Unis. Son père était un policier irlando-américain alors que sa mère ét
-            ait une femme de ménage. Au cours de sa jeunesse, John a malheureusement perdu son
-            père et lorsqu'il est devenu adulte, sa mère a elle aussi perdu la vie. McClane est
-            ensuite allé vivre dans la ville de New York où il a rejoint la police locale. Il a
-            très vite rencontré un certain succès et cela lui a donc valu d'être promu au grade de
-            lieutenant par son capitaine.
-        </p>
+            </p>
+        </div>
     </div>
-</div>
 </section>

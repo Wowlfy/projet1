@@ -143,3 +143,53 @@
     box-sizing: border-box;
     color: var(--lightColor);
 }
+
+@media screen and (max-width: 600px) {
+    /* test pour skills */
+    .skills {
+        height: 1200px;
+        justify-content: center;
+    }
+    .gauge {
+        margin: 15px;
+        width: 150px;
+        height: 150px;
+    }
+    .gauge-main {
+        margin-top: 10px;
+    }
+    .gauge-text {
+        margin-bottom: 10px;
+    }
+    .top-cards, .bot-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin: 10px;
+        height: 600px;
+    }
+    .bot-cards {
+        margin-bottom: 10px;
+    }
+    .skills-main {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+        background-attachment: local;
+    }
+    .skills-global {
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 0px;
+        width: 100%;
+        height: auto;
+        padding: 0 0 40px 0;
+    }
+    .skills-global h2 {
+        margin-bottom: 0;
+        font-size: 3.2em;
+    }
+}

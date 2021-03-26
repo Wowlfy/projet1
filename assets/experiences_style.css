@@ -22,6 +22,209 @@
   margin-bottom: 0;
 }
 
+/* le timeline entierement */
+
+.timeline {
+  width: 100%;
+  background-color: var(--mainColor);
+  box-shadow: 0 5px 25px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* c'est l'embalage de l'ensemblembles des pages de timelines */
+
+.timeline .swiper-container {
+  height: 75vh;
+  width: 100%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* c'est l'embalage de images de timelines */
+
+.timeline .swiper-wrapper {
+  transition: 2s cubic-bezier(0.68, -0.4, 0.27, 1.34) 0.2s;
+}
+
+/* le slide */
+
+.timeline .swiper-slide {
+  position: relative;
+  color: var(--mainColor);
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Les contenus des pages slide : Les dates, les titres et le resumé */
+
+.timeline .swiper-slide-content {
+  position: absolute;
+  text-align: center;
+  width: 80%;
+  z-index: 2;
+}
+
+/* Les dates dans le slide (pas le timeline) */
+
+.timeline .swiper-slide .timeline-year {
+  font-style: italic;
+  font-family: var(--subTitleFont);
+  font-size: 50px;
+  color: var(--secondaryColor);
+  font-weight: 300;
+  opacity: 0;
+  transition: 0.2s ease 0.6s;
+  margin-bottom: 50px;
+  transform: translate3d(20px, 0, 0);
+  margin: 0;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+}
+
+/* Le titres dans le slide */
+
+.timeline .swiper-slide .timeline-title {
+  font-weight: 800;
+  font-size: 34px;
+  font-family: var(--subTitleFont);
+  opacity: 0;
+  font-style: italic;
+  transition: 0.2s ease 0.4s;
+  margin: 0;
+  transform: translate3d(20px, 0, 0);
+  color: var(--lightColor);
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+}
+
+/* Les textes dans le slide */
+
+.timeline .swiper-slide .timeline-text {
+  opacity: 0;
+  transition: 0.1s ease 0.4s;
+  line-height: 1.5;
+  transform: translate3d(20px, 0, 0);
+  margin: 0;
+  color: var(--lightColor);
+  font-family: var(--titleFont);
+  text-transform: uppercase;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  font-size: 4.2em;
+}
+
+/* Les dates, titre et textes dans le slide apres le chargement */
+
+.timeline .swiper-slide-active .timeline-year {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: 0.2s ease 0.7s;
+}
+
+.timeline .swiper-slide-active .timeline-title {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: 0.2s ease 1s;
+}
+
+.timeline .swiper-slide-active .timeline-text {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: 0.2s ease 1s;
+}
+
+/* les pages (les dates) */
+
+.timeline .swiper-pagination {
+  right: 15% !important;
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 25px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* les dates  */
+
+.timeline .swiper-pagination-bullet {
+  width: auto;
+  height: auto;
+  text-align: center;
+  opacity: 1;
+  background: transparent;
+  color: var(--lightColor);
+  margin: 15px 0 !important;
+  position: relative;
+  font-weight: 1000;
+}
+
+/* Le timeline la dates sur la barre encours */
+
+.timeline .swiper-pagination-bullet-active {
+  color: var(--secondaryColor);
+}
+
+/* Les fleche haut et bas */
+
+.timeline .swiper-button-next, .timeline .swiper-button-prev {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  margin: 0;
+  top: 15%;
+  background-size: 80px 40px;
+  z-index: 2;
+  transition: 0.2s;
+  transform: rotate(0.25turn);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+}
+
+.timeline .swiper-button-prev {
+  background-image: url("https://media.discordapp.net/attachments/820966900048855080/824947257664733214/arrow_left.png");
+}
+
+.timeline .swiper-button-prev:hover {
+  /*transform: translateX(-3px);*/
+  transform: rotate(0.25turn);
+}
+
+.timeline .swiper-button-next {
+  background-image: url("https://media.discordapp.net/attachments/820966900048855080/824947260219457546/arrow_right.png");
+}
+
+.timeline .swiper-button-next:hover {
+  transform: rotate(0.25turn);
+}
+
+.timeline .swiper-slide-content {
+  /*right: 30%;*/
+  /*top: 50%;*/
+  /*transform: translateY(-50%);*/
+  width: 310px;
+  font-size: 11px;
+  text-align: right;
+}
+
+.timeline .swiper-button-prev {
+  top: 15%;
+  left: auto;
+  right: 15.5%;
+}
+
+.timeline .swiper-button-next {
+  top: auto;
+  bottom: 15%;
+  right: 15.5%;
+}
+
 /* c'est l'embalage de l'ensemblembles des pages de timelines */
 
 .swiper-container {
@@ -81,44 +284,9 @@
   font-style: italic;
   justify-content: flex-start;
   position: relative;
-  margin-left: -353px;
-  margin-bottom: 30px;
+  margin: 15px 15px;
   align-items: center;
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
-}
-
-/* Le timeline la boule sur la barre */
-
-.swiper-pagination-bullet::before {
-  display: flex;
-  content: "";
-  /* contien quelquechose :before ou :after l'element */
-  width: 15px;
-  height: 15px;
-  border-radius: 100%;
-  background-color: var(--lightColor);
-  transform: scale(1);
-  /* transforme --> 0 = cacher et 1 = afficher */
-  transition: 0.2s;
-  justify-content: center;
-  position: absolute;
-  margin-left: -50px;
-  display: none;
-}
-
-/* la barre pour le timeline */
-
-.swiper-pagination::before {
-  display: flex;
-  justify-content: center;
-  content: "";
-  height: 100vh;
-  width: 7px;
-  background-color: var(--mainColor);
-  opacity: 0.4;
-  position: absolute;
-  margin-left: -400px;
-  display: none;
 }
 
 /* Le timeline la dates sur la barre encours */
@@ -128,130 +296,58 @@
   color: var(--secondaryColor);
 }
 
-/* Le timeline la boule sur la barre encours */
-
-.swiper-pagination-bullet-active::before {
-  display: flex;
-  transform: scale(1);
-  /* transforme --> 0 = cacher et 1 = afficher */
-  background-color: var(--secondaryColor);
-  display: none;
-}
-
-/* Les fleche haut et bas */
-
-.swiper-button-next, .swiper-button-prev {
-  display: flex;
-  background-size: 40px 40px;
-  width: 40px;
-  z-index: 1;
-  transition: 0.2s;
-}
-
-/* La fleche pointant vers la gauche/haut */
-
-.swiper-button-prev {
-  left: 81.5%;
-  top: 15%;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/05/Red_Arrow_Left.png");
-  transform: rotate(0.25turn);
-}
-
-.swiper-button-prev:hover {
-  transform: rotate(0.25turn);
-}
-
-/* La fleche pointant vers la droite/bas */
-
-.swiper-button-next {
-  left: 81.5%;
-  top: 85%;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Red_Arrow_Right.svg/600px-Red_Arrow_Right.svg.png");
-  transform: rotate(0.25turn);
-}
-
-.swiper-button-next:hover {
-  transform: rotate(0.25turn);
-}
-
-.btn4 {
-  display: flex;
-  align-items: center;
-}
-
-/* Les contenus des pages slide : Les dates, les titres et le resumé */
-
-.swiper-slide-content {
+.global-boutons-slide {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   position: absolute;
   width: 100%;
-  max-width: 310px;
-  transform: translate(50%, 0);
-  font-size: 12px;
+  height: 100%;
+  z-index: 1;
 }
 
-/* Les dates dans le slide (pas le timeline) */
-
-.timeline-year {
-  font-style: italic;
-  font-family: var(--subTitleFont);
-  font-size: 50px;
-  color: var(--secondaryColor);
-  font-weight: 300;
-  opacity: 0;
-  transition: 0.2s ease 0.6s;
-  margin-bottom: 50px;
-  transform: translate3d(20px, 0, 0);
-  margin: 0;
-  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+.main-boutons-slide {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  text-align: center;
 }
 
-/* Le titres dans le slide */
-
-.swiper-slide .timeline-title {
-  font-weight: 800;
-  font-size: 34px;
-  font-family: var(--subTitleFont);
-  opacity: 0;
-  transition: 0.2s ease 0.4s;
-  margin: 0;
-  transform: translate3d(20px, 0, 0);
-  color: var(--lightColor);
-  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+.boutons-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  z-index: 1;
+  margin-left: 60%;
 }
 
-/* Les textes dans le slide */
+@media screen and (max-width: 600px) {
+  .experience_body h2 {
+    font-size: 3.2em;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .slide-image {
+    width: auto;
+    height: 100%;
+    object-fit: center;
+  }
+  .timeline .swiper-pagination-bullet {
+    display: none;
+  }
 
-.swiper-slide .timeline-text {
-  opacity: 0;
-  transition: 0.1s ease 0.4s;
-  line-height: 1.5;
-  transform: translate3d(20px, 0, 0);
-  margin: 0;
-  color: var(--lightColor);
-  font-family: var(--titleFont);
-  text-transform: uppercase;
-  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
-}
+  .experience_body {
+    display: block;
+  }
 
-/* Les dates, titre et textes dans le slide apres le chargement */
+  .timeline-title {
+    font-style: italic;
+  }
 
-.swiper-slide-active .timeline-year {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-  transition: 0.2s ease 0.7s;
-}
-
-.swiper-slide-active .timeline-title {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-  transition: 0.2s ease 1s;
-}
-
-.swiper-slide-active .timeline-text {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-  transition: 0.2s ease 1s;
+  .timeline-text {
+    font-size: 3.4em;
+  } 
 }

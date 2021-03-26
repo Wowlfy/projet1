@@ -12,10 +12,10 @@
             </ul>
         <?php endif; ?>
         <div class="log">
-            <label for="firstname">Prenom</label>
+            <label for="firstname">FIRST NAME</label>
             <input type="text" placeholder="John" name="firstname" value="<?= $data['firstname'] ?? '' ?>" required>
 
-            <label for="lastname">Nom</label>
+            <label for="lastname">LAST NAME</label>
             <input type="text" placeholder="McClane" id="lastname" name="lastname" value="<?= $data['lastname'] ?? '' ?>" required>
 
             <label for="email">Email</label>
@@ -26,6 +26,6 @@
             <textarea placeholder="Type your message here" id="message" name="message" value="<?= $data['message'] ?? '' ?>" required></textarea>
         </div>
 
-        <button>ENVOYER</button>
+        <button>SEND</button>
     </form>
 </section>
